@@ -1,0 +1,92 @@
+# ==============================================================================
+# FreightWatch .gitignore
+# Excludes all non-essential files, virtual environments, caches, and secrets
+# ==============================================================================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Python distribution / packaging
+build/
+dist/
+*.egg-info/
+*.egg
+.eggs/
+
+# Virtual Environments
+.venv/
+venv/
+ENV/
+env/
+
+# Test, coverage, and type check caches
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# Node.js & Next.js build artifacts
+node_modules/
+web/node_modules/
+.next/
+web/.next/
+out/
+web/out/
+.turbo/
+web/.turbo/
+*.tsbuildinfo
+next-env.d.ts
+web/next-env.d.ts
+
+# Package manager debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+lerna-debug.log*
+
+# Environment and sensitive keys
+.env
+.env*.local
+.env.local
+web/.env.local
+*.pem
+*.key
+
+# Operating System files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# IDE & Editor files
+.idea/
+*.swp
+*.swo
+*~
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# Scratch & temporary agent logs
+scratch/
+skills_no_ai_slop.md
+eval_no_ai_slop.md
+
+# Agent workspace configurations and instructions
+.agents/
+AGENTS.md
+GEMINI.md
+web/AGENTS.md
+

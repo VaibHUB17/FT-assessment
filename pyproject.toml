@@ -1,0 +1,31 @@
+[project]
+name = "freightwatch-ai"
+version = "2.0.0"
+description = "Deterministic Freight Cost Analytics and Anomaly Attribution Pipeline"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+    { name = "FreightTiger AI Engineering Candidate" }
+]
+dependencies = []
+
+[project.optional-dependencies]
+llamaindex = [
+    "llama-index-core>=0.11.0",
+    "llama-index-vector-stores-lancedb>=0.2.0",
+    "llama-index-embeddings-fastembed>=0.2.0",
+    "lancedb>=0.10.0",
+    "fastembed>=0.3.0",
+    "pydantic>=2.0.0",
+]
+eval = [
+    "ragas>=0.1.0",
+]
+
+[tool.pyright]
+include = ["pipeline"]
+exclude = ["**/node_modules", "**/__pycache__"]
+reportMissingImports = "none"
+reportMissingTypeStubs = "none"
+pythonVersion = "3.11"

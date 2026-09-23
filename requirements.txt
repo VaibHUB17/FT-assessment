@@ -1,0 +1,28 @@
+# ==============================================================================
+# FreightWatch AI Dependencies
+# ==============================================================================
+#
+# NOTE ON DUAL-ENGINE ARCHITECTURE:
+# 1. Deterministic Production Core (Engine 1):
+#    Requires ZERO external dependencies! Runs out-of-the-box on standard Python 3.10+.
+#    Command: python pipeline/run_all.py
+#
+# 2. LlamaIndex & Vector Storage Engine (Engine 2):
+#    Optional packages for event-driven LlamaIndex Workflows, LanceDB vector store,
+#    and FastEmbed local quantized embeddings.
+#    Install via: pip install -r requirements.txt (or: uv pip install -r requirements.txt)
+# ==============================================================================
+
+# Pydantic v2 for strict structured schemas and runtime contract validation
+pydantic>=2.0.0
+
+# LlamaIndex Core & Modern Event-Driven Workflows
+llama-index-core>=0.11.0
+
+# LanceDB Embedded Columnar Vector Database (Serverless Rust Core)
+lancedb>=0.10.0
+llama-index-vector-stores-lancedb>=0.2.0
+
+# FastEmbed Local Quantized ONNX Embeddings (Zero API cost, CPU-accelerated)
+fastembed>=0.3.0
+llama-index-embeddings-fastembed>=0.2.0
