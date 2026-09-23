@@ -28,7 +28,6 @@ Freight rates vary due to operational disruptions (monsoons, holiday surcharges,
 - [Reproducibility & Evaluation Audit (3 Runs)](#reproducibility--evaluation-audit-3-runs)
 - [Token & Cost Accounting Ledger](#token--cost-accounting-ledger)
 - [Interactive Next.js 16 Web Dashboard](#interactive-nextjs-16-web-dashboard)
-- [10-Minute Walkthrough Script for Round 2](#10-minute-walkthrough-script-for-round-2)
 - [Quick Start Guide](#quick-start-guide)
 
 ---
@@ -190,20 +189,6 @@ Built with **Next.js 16 App Router**, **Tailwind CSS**, and **`motion`**:
    - Displays 3-run identical SHA-256 hashes, negative-control test suite, and token cost ledger.
 7. **One-Click Export**:
    - Direct download of `output.csv` matching the assignment contract.
-
----
-
-## 10-Minute Walkthrough Script for Round 2
-
-Use this structured agenda for your 10-minute presentation:
-
-| Time | Agenda Item | Key Talking Points |
-|---|---|---|
-| **0:00 - 2:00** | **Problem & Data Integrity** | Explain weighted unit cost formula: $\frac{\sum \text{cost}}{\sum (\text{tonnes} \times \text{km})}$. Explain Monday-to-Sunday week grouping and trailing 8-week baseline strictly excluding look-ahead. |
-| **2:00 - 4:30** | **RAG Architecture & Guardrails** | Demonstrate LlamaIndex metadata filtering by corridor and date. Show how negative controls (N005, N006, N009, N010) are rejected to prevent false positives. |
-| **4:30 - 6:30** | **Live UI Demonstration** | Walk through the Next.js 16 dashboard: toggle corridors in the trend chart, inspect an anomaly in the slide-over drawer, and ask the AI Assistant a plain-English question. |
-| **6:30 - 8:30** | **Evaluation & Reproducibility** | Show the 3-run SHA-256 hash match (0 diffs), the 5/5 negative control guardrail passes, and the token ledger ($0.007455 run cost). |
-| **8:30 - 10:00** | **Trade-offs & Engineering Next Steps** | Discuss tradeoffs: deterministic vs live LLM evaluation, embeddings vs metadata filtering, and how to scale to streaming telemetry. |
 
 ---
 
