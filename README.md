@@ -28,6 +28,8 @@ Freight rates vary due to operational disruptions (monsoons, holiday surcharges,
 - [Reproducibility & Evaluation Audit (3 Runs)](#reproducibility--evaluation-audit-3-runs)
 - [Token & Cost Accounting Ledger](#token--cost-accounting-ledger)
 - [Interactive Next.js 16 Web Dashboard](#interactive-nextjs-16-web-dashboard)
+- [CLI Semantic Assistant](#cli-semantic-assistant)
+- [Cross-Checking & Verification Commands](#cross-checking--verification-commands)
 - [Quick Start Guide](#quick-start-guide)
 
 ---
@@ -189,6 +191,98 @@ Built with **Next.js 16 App Router**, **Tailwind CSS**, and **`motion`**:
    - Displays 3-run identical SHA-256 hashes, negative-control test suite, and token cost ledger.
 7. **One-Click Export**:
    - Direct download of `output.csv` matching the assignment contract.
+
+---
+
+## CLI Semantic Assistant
+
+FreightWatch includes an interactive natural language command-line assistant powered by **LlamaIndex** and **Groq LPU (`openai/gpt-oss-120b`)** with fallback to grounded note retrieval.
+
+### Ask Disruption & Freight Questions:
+```bash
+# Query specific corridor disruptions
+python pipeline/llamaindex_rag.py --query "Why was Chennai-Bangalore pricier in March 2025?"
+
+# Query nationwide market movements
+python pipeline/llamaindex_rag.py --query "Did diesel price increases cause routes to spike?"
+
+# Query festival or seasonal surcharges
+python pipeline/llamaindex_rag.py --query "What happened on Ahmedabad-Mumbai in January 2025?"
+```
+
+### Run LlamaIndex Workflow Benchmark Tests:
+```bash
+# Runs sample anomaly candidates through the event-driven state machine
+python pipeline/llamaindex_rag.py --test
+```
+
+---
+
+## Cross-Checking & Verification Commands
+
+Use these exact commands to independently audit schema compliance, row counts, 0-diff determinism, and guardrail decisions:
+
+### 1. Schema Contract Cross-Check
+Verifies that generated `output.csv` has the exact 8 columns defined by `sample_output_format_v2.csv`:
+```bash
+python -c "
+sample_header = open('AI Intern Case Study/sample_output_format_v2.csv').readline().strip().split(',')
+out_header = open('output.csv').readline().strip().split(',')
+assert sample_header == out_header, f'Header mismatch: {sample_header} vs {out_header}'
+print('Schema Contract Check: 100% MATCH!')
+print('Columns:', out_header)
+"
+```
+
+### 2. Output Row Count & Verdict Integrity Check
+Validates that exactly 20 anomalies were flagged, with 4 operational justifications and 16 unexplained spikes:
+```bash
+python -c "
+import csv
+with open('output.csv', encoding='utf-8') as f:
+    rows = list(csv.DictReader(f))
+print(f'Total Anomaly Rows: {len(rows)}')
+justified = sum(1 for r in rows if r['flagged'] == 'No (justified)')
+unexplained = sum(1 for r in rows if r['flagged'] == 'Yes')
+print(f'Justified (Operational): {justified} | Unexplained (Flagged): {unexplained}')
+assert len(rows) == 20, f'Expected 20 rows, got {len(rows)}'
+assert justified == 4, f'Expected 4 justified, got {justified}'
+assert unexplained == 16, f'Expected 16 unexplained, got {unexplained}'
+print('Row & Verdict Integrity: 100% VERIFIED!')
+"
+```
+
+### 3. Byte-for-Byte 0-Diff Check against Ground Truth
+Confirms that the output is identical to the verified benchmark baseline without any drift:
+```bash
+git diff --no-index output.csv artifacts/reproducibility_run1.csv
+```
+*(Produces zero output and exit code 0, confirming 100% exact match).*
+
+### 4. 3-Pass Deterministic SHA-256 & Negative-Control Audit
+Runs 3 untouched passes with cryptographic hashing and tests all 5 negative-control distractor notes:
+```bash
+python pipeline/reproducibility_eval.py
+```
+**Expected Outcome:**
+- 3 Identical SHA-256 hashes (`080765c3...`).
+- 0 field mismatches across runs.
+- 5 / 5 Negative Control Guardrails Passed (`N005`, `N006`, `N008`, `N009`, `N010` rejected).
+- Ragas Metrics: 100% Context Precision, 100% Answer Relevancy.
+
+### 5. Inspect Exported UI Fixtures
+Verifies that the Next.js data fixtures were exported properly:
+```bash
+python -c "
+import json
+with open('web/src/data/freight_data.json', encoding='utf-8') as f:
+    d = json.load(f)
+print('UI Fixture Loaded!')
+print(f'Total Shipments: {d[\"meta\"][\"total_shipments\"]:,}')
+print(f'Total Route-Weeks: {d[\"meta\"][\"total_route_weeks\"]}')
+print(f'Total Anomalies: {d[\"meta\"][\"total_anomalies\"]}')
+"
+```
 
 ---
 
