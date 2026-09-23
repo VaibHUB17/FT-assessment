@@ -214,7 +214,7 @@ export default function FreightWatchDashboard() {
         <div className="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-2">
           <span>Freight Cost Anomaly Detection & Attribution System</span>
           <span className="font-mono text-slate-400 text-[11px]">
-            Next.js 16 • Tailwind CSS • LlamaIndex RAG • 100% Deterministic Reproducibility
+            Next.js 16 • Tailwind CSS • LlamaIndex RAG • Causality Guardrails
           </span>
         </div>
       </footer>

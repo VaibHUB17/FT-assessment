@@ -201,7 +201,7 @@ export function AnomalyDrawer({ anomaly, onClose, notes }: AnomalyDrawerProps) {
           {/* Footer note */}
           <div className="pt-4 border-t border-white/[0.08] text-[11px] text-slate-500 flex items-center justify-between font-mono">
             <span>Inference: Groq gpt-oss-120b</span>
-            <span className="text-emerald-400">Deterministic Verified</span>
+            <span className="text-emerald-400">Guardrail Verified</span>
           </div>
         </motion.div>
       </div>

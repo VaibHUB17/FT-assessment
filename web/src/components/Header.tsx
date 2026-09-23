@@ -85,12 +85,8 @@ export function Header({ activeTab, setActiveTab, anomalyCount }: HeaderProps) {
             })}
           </nav>
 
-          {/* Action buttons and System Status */}
+          {/* Action buttons */}
           <div className="flex items-center gap-3">
-            <div className="hidden sm:flex items-center gap-2 text-[11px] font-mono text-emerald-400 bg-emerald-950/30 border border-emerald-500/25 px-2.5 py-1 rounded-full shadow-[0_0_12px_rgba(16,185,129,0.15)]">
-              <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse shadow-[0_0_8px_rgba(16,185,129,0.8)]"></span>
-              <span>100% Deterministic</span>
-            </div>
             <motion.a
               href="/output.csv"
               download="output.csv"

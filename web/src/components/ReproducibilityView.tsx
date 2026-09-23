@@ -97,7 +97,7 @@ export function ReproducibilityView({ reproducibility, guardrails, telemetry }: 
             <span>Evaluated Rows: {reproducibility.total_rows}</span>
             <span className="text-emerald-400 font-medium flex items-center gap-1">
               <CheckCircle2 className="w-3.5 h-3.5" />
-              Deterministic Match
+              Identical Hash Match
             </span>
           </div>
         </div>
