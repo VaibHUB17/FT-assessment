@@ -1,0 +1,163 @@
+{
+  "Delhi-Jaipur#2024-11-11": {
+    "flagged": "Yes",
+    "matched_note_id": "",
+    "reason": "No retrieved note applies to the Delhi-Jaipur route within the required 14\u2011day window or describes a cost\u2011increasing event. The closest note (N007) is dated 2024\u201105\u201120 and mentions improved road conditions, which would lower costs, not justify the +35.5% surge.",
+    "prompt_tokens": 792,
+    "completion_tokens": 374
+  },
+  "Delhi-Jaipur#2024-11-18": {
+    "flagged": "Yes",
+    "matched_note_id": "",
+    "reason": "No retrieved note applies to the Delhi-Jaipur route within the required 14\u2011day window around the week of 2024\u201111\u201118, nor describes a cost\u2011increasing event that could explain the +27.6% surge. The closest note (N003) mentions diesel price hikes but is dated 2025\u201105\u201105, well outside the allowed timeframe.",
+    "prompt_tokens": 792,
+    "completion_tokens": 410
+  },
+  "Ahmedabad-Mumbai#2025-01-20": {
+    "flagged": "No (justified)",
+    "matched_note_id": "N002",
+    "reason": "Note N002 dated 2025-01-20 applies to Ahmedabad-Mumbai and reports a regional festival week surcharge due to high demand and limited truck availability, directly explaining the observed cost surge.",
+    "prompt_tokens": 799,
+    "completion_tokens": 273
+  },
+  "Chennai-Bangalore#2025-02-24": {
+    "flagged": "No (justified)",
+    "matched_note_id": "N001",
+    "reason": "Note N001 dated 2025-02-24 reports heavy flooding on the Chennai-Bangalore highway causing detours and higher trip costs during the week of 2025-02-24, directly explaining the observed cost surge.",
+    "prompt_tokens": 867,
+    "completion_tokens": 264
+  },
+  "Chennai-Bangalore#2025-03-03": {
+    "flagged": "No (justified)",
+    "matched_note_id": "N001",
+    "reason": "Note N001 (2025-02-24) reports heavy flooding on the Chennai-Bangalore highway from Feb\u202f24 to Mar\u202f8, forcing longer detours and higher trip costs; this event falls within 14\u202fdays of the week_of date and directly explains the +22.8% cost surge.",
+    "prompt_tokens": 867,
+    "completion_tokens": 519
+  },
+  "Chennai-Bangalore#2025-03-10": {
+    "flagged": "No (justified)",
+    "matched_note_id": "N001",
+    "reason": "Note N001 dated 2025-02-24 reports heavy flooding on the Chennai\u2011Bangalore highway from Feb\u202f24 to Mar\u202f8, causing detours and higher trip costs, which explains the +22% cost surge for the week of 2025\u201103\u201110.",
+    "prompt_tokens": 867,
+    "completion_tokens": 568
+  },
+  "Chennai-Bangalore#2025-03-17": {
+    "flagged": "Yes",
+    "matched_note_id": "",
+    "reason": "No retrieved note meets the criteria to justify the cost surge for Chennai-Bangalore week of 2025-03-17. The closest note (N001) describes flooding but its date (2025-02-24) is outside the 14\u2011day window and the event ended before the week in question. Other notes are either unrelated, dated after the week, or state that conditions were normal, thus they do not explain the increase.",
+    "prompt_tokens": 867,
+    "completion_tokens": 638
+  },
+  "Mumbai-Pune#2025-06-23": {
+    "flagged": "Yes",
+    "matched_note_id": "",
+    "reason": "No retrieved note meets the criteria to justify the +20.6% cost surge for Mumbai-Pune week of 2025-06-23. The only potentially relevant note (N003) is dated 2025-05-05, which is outside the required 14\u2011day window and does not specify an ongoing event covering late June. All other notes are either unrelated, dated far outside the window, or explicitly state no cost impact.",
+    "prompt_tokens": 736,
+    "completion_tokens": 443
+  },
+  "Mumbai-Pune#2025-09-15": {
+    "flagged": "Yes",
+    "matched_note_id": "",
+    "reason": "No retrieved note provides a valid explanation for the +23.6% cost surge on the Mumbai-Pune route for week of 2025-09-15. The only note within the 14\u2011day window (N006, 2025-09-22) explicitly states that demand was stable and there were no major disruptions, which does not justify a cost increase. All other notes are either outside the relevant date range or describe unrelated events.",
+    "prompt_tokens": 736,
+    "completion_tokens": 418
+  },
+  "Mumbai-Pune#2025-10-06": {
+    "flagged": "Yes",
+    "matched_note_id": "",
+    "reason": "No retrieved note provides a valid explanation for the 22.9% cost surge on the Mumbai-Pune route for week of 2025-10-06. The only note within the relevant time window (N006, dated 2025-09-22) states that demand remained stable with no major disruptions, which does not justify the cost increase.",
+    "prompt_tokens": 736,
+    "completion_tokens": 415
+  },
+  "Mumbai-Pune#2025-10-20": {
+    "flagged": "Yes",
+    "matched_note_id": "",
+    "reason": "No retrieved note provides a valid justification for the 24.8% cost surge on the Mumbai-Pune route for the week of 2025-10-20. The only note within the 14\u2011day window (N010) explicitly states that compliance costs were absorbed without a rate change, which does not explain a cost increase. Other notes are either too old or indicate no disruptions.",
+    "prompt_tokens": 736,
+    "completion_tokens": 430
+  },
+  "Mumbai-Pune#2025-10-27": {
+    "flagged": "Yes",
+    "matched_note_id": "",
+    "reason": "No retrieved note provides a valid explanation for the 28.3% cost surge on the Mumbai-Pune route for week of 2025-10-27. The only same\u2011day note (N010) states that compliance costs were absorbed without a rate change, which does not justify higher costs, and the other notes are either outdated or indicate no disruptions.",
+    "prompt_tokens": 736,
+    "completion_tokens": 400
+  },
+  "Mumbai-Pune#2025-11-03": {
+    "flagged": "Yes",
+    "matched_note_id": "",
+    "reason": "No retrieved note provides a valid justification for the 24.1% cost surge on the Mumbai-Pune route for week of 2025-11-03. The only note within the 14\u2011day window (N010, 2025-10-27) states that compliance costs were absorbed without a rate change, which does not explain a cost increase. All other notes are either outside the relevant date range or describe stable conditions.",
+    "prompt_tokens": 736,
+    "completion_tokens": 424
+  },
+  "Mumbai-Pune#2025-11-10": {
+    "flagged": "Yes",
+    "matched_note_id": "",
+    "reason": "No retrieved note provides a valid explanation for the 21.4% cost surge on the Mumbai-Pune route for week of 2025-11-10. The only recent note (N010, dated 2025-10-27) states that compliance costs were absorbed without a rate change, which does not justify higher costs. Earlier notes are either outside the 14\u2011day window or describe stable conditions, so the surge remains unexplained.",
+    "prompt_tokens": 736,
+    "completion_tokens": 451
+  },
+  "Mumbai-Pune#2025-11-17": {
+    "flagged": "Yes",
+    "matched_note_id": "",
+    "reason": "No retrieved note provides a valid explanation for the cost surge on the Mumbai-Pune route for week of 2025-11-17. The closest note (N003) about diesel price hikes is dated 2025-05-05, far outside the 14\u2011day window, and the other notes either report no disruptions or state costs were absorbed without rate changes.",
+    "prompt_tokens": 736,
+    "completion_tokens": 393
+  },
+  "Mumbai-Pune#2025-11-24": {
+    "flagged": "Yes",
+    "matched_note_id": "",
+    "reason": "No retrieved note meets the criteria to justify the 23% cost surge for Mumbai-Pune in the week of 2025-11-24. The only potentially relevant notes are either too old (N003, N006) or describe no cost impact (N010), and none fall within the required 14\u2011day window or directly explain a cost increase for this route.",
+    "prompt_tokens": 736,
+    "completion_tokens": 418
+  },
+  "Mumbai-Pune#2025-12-01": {
+    "flagged": "Yes",
+    "matched_note_id": "",
+    "reason": "No retrieved note meets the strict criteria to justify the 37.4% cost increase for the Mumbai-Pune route on week_of 2025-12-01. The only potentially relevant note (N003) about diesel price hikes is dated 2025-05-05, far outside the 14\u2011day window and does not specify an ongoing event covering December, and its impact (5\u20117%) is far below the observed surge. All other notes are either unrelated, describe stable conditions, or state costs were absorbed without rate changes.",
+    "prompt_tokens": 736,
+    "completion_tokens": 529
+  },
+  "Mumbai-Pune#2025-12-08": {
+    "flagged": "Yes",
+    "matched_note_id": "",
+    "reason": "No retrieved note provides a valid justification for the 38.8% cost surge on the Mumbai-Pune route for the week of 2025-12-08. The only potentially relevant note (N003) is dated 2025-05-05, outside the 14\u2011day window and describes only a 5\u20117% cost increase, which does not explain the observed surge. All other notes are either unrelated, describe stable conditions, or note cost absorption without rate changes.",
+    "prompt_tokens": 736,
+    "completion_tokens": 431
+  },
+  "Mumbai-Pune#2025-12-15": {
+    "flagged": "Yes",
+    "matched_note_id": "",
+    "reason": "No retrieved note provides a valid justification for the cost surge on the Mumbai-Pune route for week of 2025-12-15. The only potentially relevant note (N003) about diesel price hikes is dated 2025-05-05, far outside the 14\u2011day window and not an active event covering December, while the other notes either describe stable conditions or cost absorption without rate changes.",
+    "prompt_tokens": 736,
+    "completion_tokens": 366
+  },
+  "Mumbai-Pune#2025-12-22": {
+    "flagged": "Yes",
+    "matched_note_id": "",
+    "reason": "No retrieved note provides a valid justification for the +38.9% cost increase on the Mumbai-Pune route for the week of 2025-12-22. The closest note (N003) mentions a diesel price rise of 5-7% on 2025-05-05, which is outside the 14\u2011day window and does not explain the magnitude of the surge.",
+    "prompt_tokens": 736,
+    "completion_tokens": 407
+  },
+  "Mumbai-Delhi#2024-07-29": {
+    "flagged": "Yes",
+    "matched_note_id": "",
+    "reason": "No retrieved note provides a valid justification for the cost surge. The closest note (N005) mentions highway maintenance but explicitly states costs were not significantly affected, which does not explain a >=20% increase.",
+    "prompt_tokens": 716,
+    "completion_tokens": 244
+  },
+  "Mumbai-Pune#2025-09-22": {
+    "flagged": "Yes",
+    "matched_note_id": "",
+    "reason": "No retrieved note provides a valid justification for the >=20% cost surge on the Mumbai-Pune route for week of 2025-09-22. The closest note (N006) states demand was stable with no disruptions, which does not explain the cost increase.",
+    "prompt_tokens": 713,
+    "completion_tokens": 291
+  },
+  "Kolkata-Bhubaneswar#2025-06-09": {
+    "flagged": "Yes",
+    "matched_note_id": "",
+    "reason": "No retrieved note provides a valid justification for the >=20% cost surge on the Kolkata-Bhubaneswar route for week of 2025-06-09. Note N008 states no disruptions, N003 mentions a diesel price rise but only 5-7% impact and is outside the 14\u2011day window, and N006 reports stable demand. Hence, the surge remains unexplained.",
+    "prompt_tokens": 720,
+    "completion_tokens": 381
+  }
+}
