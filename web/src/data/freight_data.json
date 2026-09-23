@@ -1,0 +1,6360 @@
+{
+  "summary": {
+    "total_shipments": 2940,
+    "total_routes": 7,
+    "total_route_weeks": 728,
+    "total_anomalies": 20,
+    "justified_count": 4,
+    "unexplained_count": 16,
+    "date_range": {
+      "start": "2024-01-01",
+      "end": "2025-12-22"
+    }
+  },
+  "anomalies": [
+    {
+      "route": "Delhi-Jaipur",
+      "week_of": "2024-11-11",
+      "cost_per_tonne_km": "4.17",
+      "vs_own_history": "+35.5% vs this route's past average",
+      "vs_similar_routes": "+21.0% vs similar-length routes this week",
+      "flagged": "Yes",
+      "matched_note_id": "",
+      "reason": "No retrieved note applies to the Delhi-Jaipur route within the required 14\u2011day window or describes a cost\u2011increasing event. The closest note (N007) is dated 2024\u201105\u201120 and mentions improved road conditions, which would lower costs, not justify the +35.5% surge.",
+      "retrieved_notes_count": 10,
+      "guardrail_status": "PASS_REJECTED_UNEXPLAINED",
+      "route_type": "Short",
+      "shipment_count": 4,
+      "total_cost_inr": 84388.0,
+      "total_tonne_km": 20222.59
+    },
+    {
+      "route": "Delhi-Jaipur",
+      "week_of": "2024-11-18",
+      "cost_per_tonne_km": "4.09",
+      "vs_own_history": "+27.6% vs this route's past average",
+      "vs_similar_routes": "+19.7% vs similar-length routes this week",
+      "flagged": "Yes",
+      "matched_note_id": "",
+      "reason": "No retrieved note applies to the Delhi-Jaipur route within the required 14\u2011day window around the week of 2024\u201111\u201118, nor describes a cost\u2011increasing event that could explain the +27.6% surge. The closest note (N003) mentions diesel price hikes but is dated 2025\u201105\u201105, well outside the allowed timeframe.",
+      "retrieved_notes_count": 10,
+      "guardrail_status": "PASS_REJECTED_UNEXPLAINED",
+      "route_type": "Short",
+      "shipment_count": 3,
+      "total_cost_inr": 36658.0,
+      "total_tonne_km": 8961.6
+    },
+    {
+      "route": "Ahmedabad-Mumbai",
+      "week_of": "2025-01-20",
+      "cost_per_tonne_km": "3.29",
+      "vs_own_history": "+29.5% vs this route's past average",
+      "vs_similar_routes": "+22.5% vs similar-length routes this week",
+      "flagged": "No (justified)",
+      "matched_note_id": "N002",
+      "reason": "Note N002 dated 2025-01-20 applies to Ahmedabad-Mumbai and reports a regional festival week surcharge due to high demand and limited truck availability, directly explaining the observed cost surge.",
+      "retrieved_notes_count": 10,
+      "guardrail_status": "PASS_JUSTIFIED",
+      "route_type": "Medium",
+      "shipment_count": 5,
+      "total_cost_inr": 134631.0,
+      "total_tonne_km": 40916.71
+    },
+    {
+      "route": "Chennai-Bangalore",
+      "week_of": "2025-02-24",
+      "cost_per_tonne_km": "3.58",
+      "vs_own_history": "+31.5% vs this route's past average",
+      "vs_similar_routes": "+38.7% vs similar-length routes this week",
+      "flagged": "No (justified)",
+      "matched_note_id": "N001",
+      "reason": "Note N001 dated 2025-02-24 reports heavy flooding on the Chennai-Bangalore highway causing detours and higher trip costs during the week of 2025-02-24, directly explaining the observed cost surge.",
+      "retrieved_notes_count": 10,
+      "guardrail_status": "PASS_JUSTIFIED",
+      "route_type": "Medium",
+      "shipment_count": 5,
+      "total_cost_inr": 120133.0,
+      "total_tonne_km": 33530.23
+    },
+    {
+      "route": "Chennai-Bangalore",
+      "week_of": "2025-03-03",
+      "cost_per_tonne_km": "3.48",
+      "vs_own_history": "+22.8% vs this route's past average",
+      "vs_similar_routes": "+32.0% vs similar-length routes this week",
+      "flagged": "No (justified)",
+      "matched_note_id": "N001",
+      "reason": "Note N001 (2025-02-24) reports heavy flooding on the Chennai-Bangalore highway from Feb\u202f24 to Mar\u202f8, forcing longer detours and higher trip costs; this event falls within 14\u202fdays of the week_of date and directly explains the +22.8% cost surge.",
+      "retrieved_notes_count": 10,
+      "guardrail_status": "PASS_JUSTIFIED",
+      "route_type": "Medium",
+      "shipment_count": 5,
+      "total_cost_inr": 100027.0,
+      "total_tonne_km": 28774.9
+    },
+    {
+      "route": "Chennai-Bangalore",
+      "week_of": "2025-03-10",
+      "cost_per_tonne_km": "3.57",
+      "vs_own_history": "+22.1% vs this route's past average",
+      "vs_similar_routes": "+33.8% vs similar-length routes this week",
+      "flagged": "No (justified)",
+      "matched_note_id": "N001",
+      "reason": "Note N001 dated 2025-02-24 reports heavy flooding on the Chennai\u2011Bangalore highway from Feb\u202f24 to Mar\u202f8, causing detours and higher trip costs, which explains the +22% cost surge for the week of 2025\u201103\u201110.",
+      "retrieved_notes_count": 10,
+      "guardrail_status": "PASS_JUSTIFIED",
+      "route_type": "Medium",
+      "shipment_count": 5,
+      "total_cost_inr": 115248.0,
+      "total_tonne_km": 32267.29
+    },
+    {
+      "route": "Chennai-Bangalore",
+      "week_of": "2025-03-17",
+      "cost_per_tonne_km": "3.47",
+      "vs_own_history": "+13.7% vs this route's past average",
+      "vs_similar_routes": "+33.5% vs similar-length routes this week",
+      "flagged": "Yes",
+      "matched_note_id": "",
+      "reason": "No retrieved note meets the criteria to justify the cost surge for Chennai-Bangalore week of 2025-03-17. The closest note (N001) describes flooding but its date (2025-02-24) is outside the 14\u2011day window and the event ended before the week in question. Other notes are either unrelated, dated after the week, or state that conditions were normal, thus they do not explain the increase.",
+      "retrieved_notes_count": 10,
+      "guardrail_status": "PASS_REJECTED_UNEXPLAINED",
+      "route_type": "Medium",
+      "shipment_count": 5,
+      "total_cost_inr": 102753.0,
+      "total_tonne_km": 29618.33
+    },
+    {
+      "route": "Mumbai-Pune",
+      "week_of": "2025-06-23",
+      "cost_per_tonne_km": "3.76",
+      "vs_own_history": "+6.2% vs this route's past average",
+      "vs_similar_routes": "+20.6% vs similar-length routes this week",
+      "flagged": "Yes",
+      "matched_note_id": "",
+      "reason": "No retrieved note meets the criteria to justify the +20.6% cost surge for Mumbai-Pune week of 2025-06-23. The only potentially relevant note (N003) is dated 2025-05-05, which is outside the required 14\u2011day window and does not specify an ongoing event covering late June. All other notes are either unrelated, dated far outside the window, or explicitly state no cost impact.",
+      "retrieved_notes_count": 10,
+      "guardrail_status": "PASS_REJECTED_UNEXPLAINED",
+      "route_type": "Short",
+      "shipment_count": 3,
+      "total_cost_inr": 26293.0,
+      "total_tonne_km": 6988.68
+    },
+    {
+      "route": "Mumbai-Pune",
+      "week_of": "2025-09-15",
+      "cost_per_tonne_km": "3.98",
+      "vs_own_history": "+9.2% vs this route's past average",
+      "vs_similar_routes": "+23.6% vs similar-length routes this week",
+      "flagged": "Yes",
+      "matched_note_id": "",
+      "reason": "No retrieved note provides a valid explanation for the +23.6% cost surge on the Mumbai-Pune route for week of 2025-09-15. The only note within the 14\u2011day window (N006, 2025-09-22) explicitly states that demand was stable and there were no major disruptions, which does not justify a cost increase. All other notes are either outside the relevant date range or describe unrelated events.",
+      "retrieved_notes_count": 10,
+      "guardrail_status": "PASS_REJECTED_UNEXPLAINED",
+      "route_type": "Short",
+      "shipment_count": 4,
+      "total_cost_inr": 34203.0,
+      "total_tonne_km": 8591.97
+    },
+    {
+      "route": "Mumbai-Pune",
+      "week_of": "2025-10-06",
+      "cost_per_tonne_km": "3.94",
+      "vs_own_history": "+5.4% vs this route's past average",
+      "vs_similar_routes": "+22.9% vs similar-length routes this week",
+      "flagged": "Yes",
+      "matched_note_id": "",
+      "reason": "No retrieved note provides a valid explanation for the 22.9% cost surge on the Mumbai-Pune route for week of 2025-10-06. The only note within the relevant time window (N006, dated 2025-09-22) states that demand remained stable with no major disruptions, which does not justify the cost increase.",
+      "retrieved_notes_count": 10,
+      "guardrail_status": "PASS_REJECTED_UNEXPLAINED",
+      "route_type": "Short",
+      "shipment_count": 5,
+      "total_cost_inr": 44675.0,
+      "total_tonne_km": 11333.27
+    },
+    {
+      "route": "Mumbai-Pune",
+      "week_of": "2025-10-20",
+      "cost_per_tonne_km": "4.10",
+      "vs_own_history": "+7.7% vs this route's past average",
+      "vs_similar_routes": "+24.8% vs similar-length routes this week",
+      "flagged": "Yes",
+      "matched_note_id": "",
+      "reason": "No retrieved note provides a valid justification for the 24.8% cost surge on the Mumbai-Pune route for the week of 2025-10-20. The only note within the 14\u2011day window (N010) explicitly states that compliance costs were absorbed without a rate change, which does not explain a cost increase. Other notes are either too old or indicate no disruptions.",
+      "retrieved_notes_count": 10,
+      "guardrail_status": "PASS_REJECTED_UNEXPLAINED",
+      "route_type": "Short",
+      "shipment_count": 4,
+      "total_cost_inr": 39114.0,
+      "total_tonne_km": 9550.87
+    },
+    {
+      "route": "Mumbai-Pune",
+      "week_of": "2025-10-27",
+      "cost_per_tonne_km": "4.07",
+      "vs_own_history": "+5.5% vs this route's past average",
+      "vs_similar_routes": "+28.3% vs similar-length routes this week",
+      "flagged": "Yes",
+      "matched_note_id": "",
+      "reason": "No retrieved note provides a valid explanation for the 28.3% cost surge on the Mumbai-Pune route for week of 2025-10-27. The only same\u2011day note (N010) states that compliance costs were absorbed without a rate change, which does not justify higher costs, and the other notes are either outdated or indicate no disruptions.",
+      "retrieved_notes_count": 10,
+      "guardrail_status": "PASS_REJECTED_UNEXPLAINED",
+      "route_type": "Short",
+      "shipment_count": 3,
+      "total_cost_inr": 29049.0,
+      "total_tonne_km": 7131.68
+    },
+    {
+      "route": "Mumbai-Pune",
+      "week_of": "2025-11-03",
+      "cost_per_tonne_km": "4.20",
+      "vs_own_history": "+7.4% vs this route's past average",
+      "vs_similar_routes": "+24.1% vs similar-length routes this week",
+      "flagged": "Yes",
+      "matched_note_id": "",
+      "reason": "No retrieved note provides a valid justification for the 24.1% cost surge on the Mumbai-Pune route for week of 2025-11-03. The only note within the 14\u2011day window (N010, 2025-10-27) states that compliance costs were absorbed without a rate change, which does not explain a cost increase. All other notes are either outside the relevant date range or describe stable conditions.",
+      "retrieved_notes_count": 10,
+      "guardrail_status": "PASS_REJECTED_UNEXPLAINED",
+      "route_type": "Short",
+      "shipment_count": 5,
+      "total_cost_inr": 44487.0,
+      "total_tonne_km": 10593.72
+    },
+    {
+      "route": "Mumbai-Pune",
+      "week_of": "2025-11-10",
+      "cost_per_tonne_km": "3.97",
+      "vs_own_history": "-0.1% vs this route's past average",
+      "vs_similar_routes": "+21.4% vs similar-length routes this week",
+      "flagged": "Yes",
+      "matched_note_id": "",
+      "reason": "No retrieved note provides a valid explanation for the 21.4% cost surge on the Mumbai-Pune route for week of 2025-11-10. The only recent note (N010, dated 2025-10-27) states that compliance costs were absorbed without a rate change, which does not justify higher costs. Earlier notes are either outside the 14\u2011day window or describe stable conditions, so the surge remains unexplained.",
+      "retrieved_notes_count": 10,
+      "guardrail_status": "PASS_REJECTED_UNEXPLAINED",
+      "route_type": "Short",
+      "shipment_count": 5,
+      "total_cost_inr": 41258.0,
+      "total_tonne_km": 10397.6
+    },
+    {
+      "route": "Mumbai-Pune",
+      "week_of": "2025-11-17",
+      "cost_per_tonne_km": "4.32",
+      "vs_own_history": "+8.9% vs this route's past average",
+      "vs_similar_routes": "+31.6% vs similar-length routes this week",
+      "flagged": "Yes",
+      "matched_note_id": "",
+      "reason": "No retrieved note provides a valid explanation for the cost surge on the Mumbai-Pune route for week of 2025-11-17. The closest note (N003) about diesel price hikes is dated 2025-05-05, far outside the 14\u2011day window, and the other notes either report no disruptions or state costs were absorbed without rate changes.",
+      "retrieved_notes_count": 10,
+      "guardrail_status": "PASS_REJECTED_UNEXPLAINED",
+      "route_type": "Short",
+      "shipment_count": 3,
+      "total_cost_inr": 30600.0,
+      "total_tonne_km": 7079.93
+    },
+    {
+      "route": "Mumbai-Pune",
+      "week_of": "2025-11-24",
+      "cost_per_tonne_km": "4.16",
+      "vs_own_history": "+3.0% vs this route's past average",
+      "vs_similar_routes": "+23.0% vs similar-length routes this week",
+      "flagged": "Yes",
+      "matched_note_id": "",
+      "reason": "No retrieved note meets the criteria to justify the 23% cost surge for Mumbai-Pune in the week of 2025-11-24. The only potentially relevant notes are either too old (N003, N006) or describe no cost impact (N010), and none fall within the required 14\u2011day window or directly explain a cost increase for this route.",
+      "retrieved_notes_count": 10,
+      "guardrail_status": "PASS_REJECTED_UNEXPLAINED",
+      "route_type": "Short",
+      "shipment_count": 3,
+      "total_cost_inr": 30766.0,
+      "total_tonne_km": 7402.04
+    },
+    {
+      "route": "Mumbai-Pune",
+      "week_of": "2025-12-01",
+      "cost_per_tonne_km": "4.39",
+      "vs_own_history": "+7.7% vs this route's past average",
+      "vs_similar_routes": "+37.4% vs similar-length routes this week",
+      "flagged": "Yes",
+      "matched_note_id": "",
+      "reason": "No retrieved note meets the strict criteria to justify the 37.4% cost increase for the Mumbai-Pune route on week_of 2025-12-01. The only potentially relevant note (N003) about diesel price hikes is dated 2025-05-05, far outside the 14\u2011day window and does not specify an ongoing event covering December, and its impact (5\u20117%) is far below the observed surge. All other notes are either unrelated, describe stable conditions, or state costs were absorbed without rate changes.",
+      "retrieved_notes_count": 10,
+      "guardrail_status": "PASS_REJECTED_UNEXPLAINED",
+      "route_type": "Short",
+      "shipment_count": 5,
+      "total_cost_inr": 62633.0,
+      "total_tonne_km": 14258.11
+    },
+    {
+      "route": "Mumbai-Pune",
+      "week_of": "2025-12-08",
+      "cost_per_tonne_km": "4.43",
+      "vs_own_history": "+7.2% vs this route's past average",
+      "vs_similar_routes": "+38.8% vs similar-length routes this week",
+      "flagged": "Yes",
+      "matched_note_id": "",
+      "reason": "No retrieved note provides a valid justification for the 38.8% cost surge on the Mumbai-Pune route for the week of 2025-12-08. The only potentially relevant note (N003) is dated 2025-05-05, outside the 14\u2011day window and describes only a 5\u20117% cost increase, which does not explain the observed surge. All other notes are either unrelated, describe stable conditions, or note cost absorption without rate changes.",
+      "retrieved_notes_count": 10,
+      "guardrail_status": "PASS_REJECTED_UNEXPLAINED",
+      "route_type": "Short",
+      "shipment_count": 3,
+      "total_cost_inr": 33602.0,
+      "total_tonne_km": 7581.78
+    },
+    {
+      "route": "Mumbai-Pune",
+      "week_of": "2025-12-15",
+      "cost_per_tonne_km": "4.39",
+      "vs_own_history": "+4.4% vs this route's past average",
+      "vs_similar_routes": "+35.5% vs similar-length routes this week",
+      "flagged": "Yes",
+      "matched_note_id": "",
+      "reason": "No retrieved note provides a valid justification for the cost surge on the Mumbai-Pune route for week of 2025-12-15. The only potentially relevant note (N003) about diesel price hikes is dated 2025-05-05, far outside the 14\u2011day window and not an active event covering December, while the other notes either describe stable conditions or cost absorption without rate changes.",
+      "retrieved_notes_count": 10,
+      "guardrail_status": "PASS_REJECTED_UNEXPLAINED",
+      "route_type": "Short",
+      "shipment_count": 3,
+      "total_cost_inr": 31391.0,
+      "total_tonne_km": 7153.68
+    },
+    {
+      "route": "Mumbai-Pune",
+      "week_of": "2025-12-22",
+      "cost_per_tonne_km": "4.49",
+      "vs_own_history": "+5.7% vs this route's past average",
+      "vs_similar_routes": "+38.9% vs similar-length routes this week",
+      "flagged": "Yes",
+      "matched_note_id": "",
+      "reason": "No retrieved note provides a valid justification for the +38.9% cost increase on the Mumbai-Pune route for the week of 2025-12-22. The closest note (N003) mentions a diesel price rise of 5-7% on 2025-05-05, which is outside the 14\u2011day window and does not explain the magnitude of the surge.",
+      "retrieved_notes_count": 10,
+      "guardrail_status": "PASS_REJECTED_UNEXPLAINED",
+      "route_type": "Short",
+      "shipment_count": 3,
+      "total_cost_inr": 32197.0,
+      "total_tonne_km": 7178.28
+    }
+  ],
+  "routes_data": {
+    "Ahmedabad-Mumbai": {
+      "route": "Ahmedabad-Mumbai",
+      "route_type": "Medium",
+      "origin": "Ahmedabad",
+      "destination": "Mumbai",
+      "series": [
+        {
+          "week_of": "2024-01-01",
+          "cost_per_tonne_km": 2.5,
+          "own_baseline": null,
+          "peer_baseline": 2.6,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-01-08",
+          "cost_per_tonne_km": 2.57,
+          "own_baseline": 2.5,
+          "peer_baseline": 2.7,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-01-15",
+          "cost_per_tonne_km": 2.57,
+          "own_baseline": 2.53,
+          "peer_baseline": 2.59,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-01-22",
+          "cost_per_tonne_km": 2.67,
+          "own_baseline": 2.54,
+          "peer_baseline": 2.68,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-01-29",
+          "cost_per_tonne_km": 2.49,
+          "own_baseline": 2.58,
+          "peer_baseline": 2.66,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-02-05",
+          "cost_per_tonne_km": 2.54,
+          "own_baseline": 2.56,
+          "peer_baseline": 2.68,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-02-12",
+          "cost_per_tonne_km": 2.48,
+          "own_baseline": 2.56,
+          "peer_baseline": 2.74,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-02-19",
+          "cost_per_tonne_km": 2.48,
+          "own_baseline": 2.55,
+          "peer_baseline": 2.69,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-02-26",
+          "cost_per_tonne_km": 2.57,
+          "own_baseline": 2.54,
+          "peer_baseline": 2.64,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-03-04",
+          "cost_per_tonne_km": 2.52,
+          "own_baseline": 2.55,
+          "peer_baseline": 2.57,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-03-11",
+          "cost_per_tonne_km": 2.62,
+          "own_baseline": 2.54,
+          "peer_baseline": 2.72,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-03-18",
+          "cost_per_tonne_km": 2.53,
+          "own_baseline": 2.55,
+          "peer_baseline": 2.64,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-03-25",
+          "cost_per_tonne_km": 2.65,
+          "own_baseline": 2.53,
+          "peer_baseline": 2.7,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-04-01",
+          "cost_per_tonne_km": 2.56,
+          "own_baseline": 2.55,
+          "peer_baseline": 2.61,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-04-08",
+          "cost_per_tonne_km": 2.59,
+          "own_baseline": 2.55,
+          "peer_baseline": 2.65,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-04-15",
+          "cost_per_tonne_km": 2.46,
+          "own_baseline": 2.56,
+          "peer_baseline": 2.65,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-04-22",
+          "cost_per_tonne_km": 2.68,
+          "own_baseline": 2.56,
+          "peer_baseline": 2.56,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-04-29",
+          "cost_per_tonne_km": 2.52,
+          "own_baseline": 2.57,
+          "peer_baseline": 2.63,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-05-06",
+          "cost_per_tonne_km": 2.6,
+          "own_baseline": 2.57,
+          "peer_baseline": 2.61,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-05-13",
+          "cost_per_tonne_km": 2.65,
+          "own_baseline": 2.57,
+          "peer_baseline": 2.65,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-05-20",
+          "cost_per_tonne_km": 2.58,
+          "own_baseline": 2.59,
+          "peer_baseline": 2.7,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-05-27",
+          "cost_per_tonne_km": 2.49,
+          "own_baseline": 2.58,
+          "peer_baseline": 2.66,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-06-03",
+          "cost_per_tonne_km": 2.48,
+          "own_baseline": 2.57,
+          "peer_baseline": 2.68,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-06-10",
+          "cost_per_tonne_km": 2.44,
+          "own_baseline": 2.56,
+          "peer_baseline": 2.54,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-06-17",
+          "cost_per_tonne_km": 2.51,
+          "own_baseline": 2.56,
+          "peer_baseline": 2.69,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-06-24",
+          "cost_per_tonne_km": 2.62,
+          "own_baseline": 2.54,
+          "peer_baseline": 2.68,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-07-01",
+          "cost_per_tonne_km": 2.62,
+          "own_baseline": 2.55,
+          "peer_baseline": 2.65,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-07-08",
+          "cost_per_tonne_km": 2.59,
+          "own_baseline": 2.55,
+          "peer_baseline": 2.65,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-07-15",
+          "cost_per_tonne_km": 2.56,
+          "own_baseline": 2.54,
+          "peer_baseline": 2.73,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-07-22",
+          "cost_per_tonne_km": 2.52,
+          "own_baseline": 2.54,
+          "peer_baseline": 2.65,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-07-29",
+          "cost_per_tonne_km": 2.44,
+          "own_baseline": 2.54,
+          "peer_baseline": 2.68,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-08-05",
+          "cost_per_tonne_km": 2.51,
+          "own_baseline": 2.54,
+          "peer_baseline": 2.65,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-08-12",
+          "cost_per_tonne_km": 2.44,
+          "own_baseline": 2.55,
+          "peer_baseline": 2.68,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-08-19",
+          "cost_per_tonne_km": 2.66,
+          "own_baseline": 2.54,
+          "peer_baseline": 2.7,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-08-26",
+          "cost_per_tonne_km": 2.58,
+          "own_baseline": 2.54,
+          "peer_baseline": 2.59,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-09-02",
+          "cost_per_tonne_km": 2.51,
+          "own_baseline": 2.54,
+          "peer_baseline": 2.55,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-09-09",
+          "cost_per_tonne_km": 2.51,
+          "own_baseline": 2.53,
+          "peer_baseline": 2.64,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-09-16",
+          "cost_per_tonne_km": 2.59,
+          "own_baseline": 2.52,
+          "peer_baseline": 2.68,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-09-23",
+          "cost_per_tonne_km": 2.48,
+          "own_baseline": 2.53,
+          "peer_baseline": 2.67,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-09-30",
+          "cost_per_tonne_km": 2.49,
+          "own_baseline": 2.54,
+          "peer_baseline": 2.67,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-10-07",
+          "cost_per_tonne_km": 2.49,
+          "own_baseline": 2.53,
+          "peer_baseline": 2.71,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-10-14",
+          "cost_per_tonne_km": 2.47,
+          "own_baseline": 2.54,
+          "peer_baseline": 2.62,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-10-21",
+          "cost_per_tonne_km": 2.56,
+          "own_baseline": 2.51,
+          "peer_baseline": 2.7,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-10-28",
+          "cost_per_tonne_km": 2.67,
+          "own_baseline": 2.51,
+          "peer_baseline": 2.56,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-11-04",
+          "cost_per_tonne_km": 2.52,
+          "own_baseline": 2.53,
+          "peer_baseline": 2.65,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-11-11",
+          "cost_per_tonne_km": 2.58,
+          "own_baseline": 2.53,
+          "peer_baseline": 2.68,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-11-18",
+          "cost_per_tonne_km": 2.59,
+          "own_baseline": 2.53,
+          "peer_baseline": 2.66,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-11-25",
+          "cost_per_tonne_km": 2.6,
+          "own_baseline": 2.55,
+          "peer_baseline": 2.71,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-12-02",
+          "cost_per_tonne_km": 2.5,
+          "own_baseline": 2.56,
+          "peer_baseline": 2.65,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-12-09",
+          "cost_per_tonne_km": 2.49,
+          "own_baseline": 2.56,
+          "peer_baseline": 2.58,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-12-16",
+          "cost_per_tonne_km": 2.45,
+          "own_baseline": 2.56,
+          "peer_baseline": 2.64,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-12-23",
+          "cost_per_tonne_km": 2.63,
+          "own_baseline": 2.55,
+          "peer_baseline": 2.73,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-12-30",
+          "cost_per_tonne_km": 2.55,
+          "own_baseline": 2.55,
+          "peer_baseline": 2.68,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-01-06",
+          "cost_per_tonne_km": 2.51,
+          "own_baseline": 2.55,
+          "peer_baseline": 2.62,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-01-13",
+          "cost_per_tonne_km": 2.6,
+          "own_baseline": 2.54,
+          "peer_baseline": 2.61,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-01-20",
+          "cost_per_tonne_km": 3.29,
+          "own_baseline": 2.54,
+          "peer_baseline": 2.69,
+          "is_anomaly": true,
+          "flagged_status": "No (justified)"
+        },
+        {
+          "week_of": "2025-01-27",
+          "cost_per_tonne_km": 2.46,
+          "own_baseline": 2.63,
+          "peer_baseline": 2.66,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-02-03",
+          "cost_per_tonne_km": 2.49,
+          "own_baseline": 2.62,
+          "peer_baseline": 2.61,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-02-10",
+          "cost_per_tonne_km": 2.44,
+          "own_baseline": 2.62,
+          "peer_baseline": 2.68,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-02-17",
+          "cost_per_tonne_km": 2.51,
+          "own_baseline": 2.62,
+          "peer_baseline": 2.74,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-02-24",
+          "cost_per_tonne_km": 2.5,
+          "own_baseline": 2.61,
+          "peer_baseline": 3.12,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-03-03",
+          "cost_per_tonne_km": 2.59,
+          "own_baseline": 2.6,
+          "peer_baseline": 3.08,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-03-10",
+          "cost_per_tonne_km": 2.64,
+          "own_baseline": 2.61,
+          "peer_baseline": 3.14,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-03-17",
+          "cost_per_tonne_km": 2.66,
+          "own_baseline": 2.62,
+          "peer_baseline": 3.0,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-03-24",
+          "cost_per_tonne_km": 2.44,
+          "own_baseline": 2.54,
+          "peer_baseline": 2.66,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-03-31",
+          "cost_per_tonne_km": 2.61,
+          "own_baseline": 2.53,
+          "peer_baseline": 2.72,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-04-07",
+          "cost_per_tonne_km": 2.49,
+          "own_baseline": 2.55,
+          "peer_baseline": 2.66,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-04-14",
+          "cost_per_tonne_km": 2.45,
+          "own_baseline": 2.56,
+          "peer_baseline": 2.64,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-04-21",
+          "cost_per_tonne_km": 2.59,
+          "own_baseline": 2.55,
+          "peer_baseline": 2.59,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-04-28",
+          "cost_per_tonne_km": 2.65,
+          "own_baseline": 2.56,
+          "peer_baseline": 2.64,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-05-05",
+          "cost_per_tonne_km": 2.59,
+          "own_baseline": 2.57,
+          "peer_baseline": 2.84,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-05-12",
+          "cost_per_tonne_km": 2.61,
+          "own_baseline": 2.56,
+          "peer_baseline": 2.79,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-05-19",
+          "cost_per_tonne_km": 2.63,
+          "own_baseline": 2.55,
+          "peer_baseline": 2.79,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-05-26",
+          "cost_per_tonne_km": 2.62,
+          "own_baseline": 2.58,
+          "peer_baseline": 2.81,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-06-02",
+          "cost_per_tonne_km": 2.64,
+          "own_baseline": 2.58,
+          "peer_baseline": 2.81,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-06-09",
+          "cost_per_tonne_km": 2.75,
+          "own_baseline": 2.6,
+          "peer_baseline": 2.76,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-06-16",
+          "cost_per_tonne_km": 2.81,
+          "own_baseline": 2.64,
+          "peer_baseline": 2.81,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-06-23",
+          "cost_per_tonne_km": 2.8,
+          "own_baseline": 2.66,
+          "peer_baseline": 2.77,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-06-30",
+          "cost_per_tonne_km": 2.71,
+          "own_baseline": 2.68,
+          "peer_baseline": 2.76,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-07-07",
+          "cost_per_tonne_km": 2.69,
+          "own_baseline": 2.7,
+          "peer_baseline": 2.88,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-07-14",
+          "cost_per_tonne_km": 2.69,
+          "own_baseline": 2.71,
+          "peer_baseline": 2.76,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-07-21",
+          "cost_per_tonne_km": 2.8,
+          "own_baseline": 2.71,
+          "peer_baseline": 2.83,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-07-28",
+          "cost_per_tonne_km": 2.68,
+          "own_baseline": 2.74,
+          "peer_baseline": 2.74,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-08-04",
+          "cost_per_tonne_km": 2.67,
+          "own_baseline": 2.74,
+          "peer_baseline": 2.8,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-08-11",
+          "cost_per_tonne_km": 2.63,
+          "own_baseline": 2.73,
+          "peer_baseline": 2.8,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-08-18",
+          "cost_per_tonne_km": 2.61,
+          "own_baseline": 2.71,
+          "peer_baseline": 2.85,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-08-25",
+          "cost_per_tonne_km": 2.62,
+          "own_baseline": 2.68,
+          "peer_baseline": 2.84,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-09-01",
+          "cost_per_tonne_km": 2.71,
+          "own_baseline": 2.67,
+          "peer_baseline": 2.77,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-09-08",
+          "cost_per_tonne_km": 2.63,
+          "own_baseline": 2.68,
+          "peer_baseline": 2.76,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-09-15",
+          "cost_per_tonne_km": 2.8,
+          "own_baseline": 2.67,
+          "peer_baseline": 2.88,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-09-22",
+          "cost_per_tonne_km": 2.64,
+          "own_baseline": 2.67,
+          "peer_baseline": 2.8,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-09-29",
+          "cost_per_tonne_km": 2.7,
+          "own_baseline": 2.66,
+          "peer_baseline": 2.87,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-10-06",
+          "cost_per_tonne_km": 2.75,
+          "own_baseline": 2.67,
+          "peer_baseline": 2.83,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-10-13",
+          "cost_per_tonne_km": 2.72,
+          "own_baseline": 2.68,
+          "peer_baseline": 2.78,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-10-20",
+          "cost_per_tonne_km": 2.74,
+          "own_baseline": 2.7,
+          "peer_baseline": 2.77,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-10-27",
+          "cost_per_tonne_km": 2.67,
+          "own_baseline": 2.71,
+          "peer_baseline": 2.78,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-11-03",
+          "cost_per_tonne_km": 2.74,
+          "own_baseline": 2.71,
+          "peer_baseline": 2.85,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-11-10",
+          "cost_per_tonne_km": 2.61,
+          "own_baseline": 2.72,
+          "peer_baseline": 2.82,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-11-17",
+          "cost_per_tonne_km": 2.75,
+          "own_baseline": 2.7,
+          "peer_baseline": 2.78,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-11-24",
+          "cost_per_tonne_km": 2.61,
+          "own_baseline": 2.71,
+          "peer_baseline": 2.81,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-12-01",
+          "cost_per_tonne_km": 2.79,
+          "own_baseline": 2.7,
+          "peer_baseline": 2.8,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-12-08",
+          "cost_per_tonne_km": 2.8,
+          "own_baseline": 2.7,
+          "peer_baseline": 2.85,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-12-15",
+          "cost_per_tonne_km": 2.73,
+          "own_baseline": 2.71,
+          "peer_baseline": 2.83,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-12-22",
+          "cost_per_tonne_km": 2.74,
+          "own_baseline": 2.71,
+          "peer_baseline": 2.83,
+          "is_anomaly": false,
+          "flagged_status": null
+        }
+      ]
+    },
+    "Chennai-Bangalore": {
+      "route": "Chennai-Bangalore",
+      "route_type": "Medium",
+      "origin": "Chennai",
+      "destination": "Bangalore",
+      "series": [
+        {
+          "week_of": "2024-01-01",
+          "cost_per_tonne_km": 2.69,
+          "own_baseline": null,
+          "peer_baseline": 2.5,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-01-08",
+          "cost_per_tonne_km": 2.77,
+          "own_baseline": 2.69,
+          "peer_baseline": 2.6,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-01-15",
+          "cost_per_tonne_km": 2.67,
+          "own_baseline": 2.73,
+          "peer_baseline": 2.54,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-01-22",
+          "cost_per_tonne_km": 2.78,
+          "own_baseline": 2.71,
+          "peer_baseline": 2.62,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-01-29",
+          "cost_per_tonne_km": 2.69,
+          "own_baseline": 2.73,
+          "peer_baseline": 2.56,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-02-05",
+          "cost_per_tonne_km": 2.69,
+          "own_baseline": 2.72,
+          "peer_baseline": 2.6,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-02-12",
+          "cost_per_tonne_km": 2.77,
+          "own_baseline": 2.71,
+          "peer_baseline": 2.59,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-02-19",
+          "cost_per_tonne_km": 2.7,
+          "own_baseline": 2.72,
+          "peer_baseline": 2.58,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-02-26",
+          "cost_per_tonne_km": 2.62,
+          "own_baseline": 2.72,
+          "peer_baseline": 2.61,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-03-04",
+          "cost_per_tonne_km": 2.64,
+          "own_baseline": 2.71,
+          "peer_baseline": 2.52,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-03-11",
+          "cost_per_tonne_km": 2.77,
+          "own_baseline": 2.69,
+          "peer_baseline": 2.65,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-03-18",
+          "cost_per_tonne_km": 2.59,
+          "own_baseline": 2.71,
+          "peer_baseline": 2.61,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-03-25",
+          "cost_per_tonne_km": 2.73,
+          "own_baseline": 2.68,
+          "peer_baseline": 2.66,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-04-01",
+          "cost_per_tonne_km": 2.71,
+          "own_baseline": 2.69,
+          "peer_baseline": 2.54,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-04-08",
+          "cost_per_tonne_km": 2.76,
+          "own_baseline": 2.69,
+          "peer_baseline": 2.57,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-04-15",
+          "cost_per_tonne_km": 2.68,
+          "own_baseline": 2.69,
+          "peer_baseline": 2.54,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-04-22",
+          "cost_per_tonne_km": 2.59,
+          "own_baseline": 2.69,
+          "peer_baseline": 2.61,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-04-29",
+          "cost_per_tonne_km": 2.73,
+          "own_baseline": 2.68,
+          "peer_baseline": 2.53,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-05-06",
+          "cost_per_tonne_km": 2.56,
+          "own_baseline": 2.7,
+          "peer_baseline": 2.63,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-05-13",
+          "cost_per_tonne_km": 2.76,
+          "own_baseline": 2.67,
+          "peer_baseline": 2.6,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-05-20",
+          "cost_per_tonne_km": 2.67,
+          "own_baseline": 2.69,
+          "peer_baseline": 2.65,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-05-27",
+          "cost_per_tonne_km": 2.73,
+          "own_baseline": 2.68,
+          "peer_baseline": 2.55,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-06-03",
+          "cost_per_tonne_km": 2.76,
+          "own_baseline": 2.68,
+          "peer_baseline": 2.54,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-06-10",
+          "cost_per_tonne_km": 2.6,
+          "own_baseline": 2.69,
+          "peer_baseline": 2.46,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-06-17",
+          "cost_per_tonne_km": 2.81,
+          "own_baseline": 2.68,
+          "peer_baseline": 2.55,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-06-24",
+          "cost_per_tonne_km": 2.65,
+          "own_baseline": 2.7,
+          "peer_baseline": 2.66,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-07-01",
+          "cost_per_tonne_km": 2.76,
+          "own_baseline": 2.69,
+          "peer_baseline": 2.58,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-07-08",
+          "cost_per_tonne_km": 2.68,
+          "own_baseline": 2.72,
+          "peer_baseline": 2.61,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-07-15",
+          "cost_per_tonne_km": 2.78,
+          "own_baseline": 2.71,
+          "peer_baseline": 2.62,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-07-22",
+          "cost_per_tonne_km": 2.66,
+          "own_baseline": 2.72,
+          "peer_baseline": 2.59,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-07-29",
+          "cost_per_tonne_km": 2.77,
+          "own_baseline": 2.71,
+          "peer_baseline": 2.51,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-08-05",
+          "cost_per_tonne_km": 2.62,
+          "own_baseline": 2.71,
+          "peer_baseline": 2.6,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-08-12",
+          "cost_per_tonne_km": 2.79,
+          "own_baseline": 2.72,
+          "peer_baseline": 2.5,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-08-19",
+          "cost_per_tonne_km": 2.76,
+          "own_baseline": 2.71,
+          "peer_baseline": 2.65,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-08-26",
+          "cost_per_tonne_km": 2.67,
+          "own_baseline": 2.73,
+          "peer_baseline": 2.55,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-09-02",
+          "cost_per_tonne_km": 2.56,
+          "own_baseline": 2.72,
+          "peer_baseline": 2.53,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-09-09",
+          "cost_per_tonne_km": 2.71,
+          "own_baseline": 2.7,
+          "peer_baseline": 2.54,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-09-16",
+          "cost_per_tonne_km": 2.66,
+          "own_baseline": 2.69,
+          "peer_baseline": 2.64,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-09-23",
+          "cost_per_tonne_km": 2.63,
+          "own_baseline": 2.69,
+          "peer_baseline": 2.6,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-09-30",
+          "cost_per_tonne_km": 2.63,
+          "own_baseline": 2.68,
+          "peer_baseline": 2.59,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-10-07",
+          "cost_per_tonne_km": 2.71,
+          "own_baseline": 2.68,
+          "peer_baseline": 2.6,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-10-14",
+          "cost_per_tonne_km": 2.63,
+          "own_baseline": 2.67,
+          "peer_baseline": 2.55,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-10-21",
+          "cost_per_tonne_km": 2.72,
+          "own_baseline": 2.65,
+          "peer_baseline": 2.61,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-10-28",
+          "cost_per_tonne_km": 2.6,
+          "own_baseline": 2.66,
+          "peer_baseline": 2.6,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-11-04",
+          "cost_per_tonne_km": 2.73,
+          "own_baseline": 2.66,
+          "peer_baseline": 2.54,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-11-11",
+          "cost_per_tonne_km": 2.75,
+          "own_baseline": 2.66,
+          "peer_baseline": 2.6,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-11-18",
+          "cost_per_tonne_km": 2.77,
+          "own_baseline": 2.68,
+          "peer_baseline": 2.57,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-11-25",
+          "cost_per_tonne_km": 2.76,
+          "own_baseline": 2.69,
+          "peer_baseline": 2.63,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-12-02",
+          "cost_per_tonne_km": 2.73,
+          "own_baseline": 2.71,
+          "peer_baseline": 2.53,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-12-09",
+          "cost_per_tonne_km": 2.65,
+          "own_baseline": 2.71,
+          "peer_baseline": 2.5,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-12-16",
+          "cost_per_tonne_km": 2.69,
+          "own_baseline": 2.71,
+          "peer_baseline": 2.52,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-12-23",
+          "cost_per_tonne_km": 2.75,
+          "own_baseline": 2.71,
+          "peer_baseline": 2.67,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-12-30",
+          "cost_per_tonne_km": 2.74,
+          "own_baseline": 2.73,
+          "peer_baseline": 2.59,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-01-06",
+          "cost_per_tonne_km": 2.72,
+          "own_baseline": 2.73,
+          "peer_baseline": 2.51,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-01-13",
+          "cost_per_tonne_km": 2.57,
+          "own_baseline": 2.73,
+          "peer_baseline": 2.63,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-01-20",
+          "cost_per_tonne_km": 2.8,
+          "own_baseline": 2.7,
+          "peer_baseline": 2.93,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-01-27",
+          "cost_per_tonne_km": 2.74,
+          "own_baseline": 2.71,
+          "peer_baseline": 2.52,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-02-03",
+          "cost_per_tonne_km": 2.68,
+          "own_baseline": 2.71,
+          "peer_baseline": 2.52,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-02-10",
+          "cost_per_tonne_km": 2.72,
+          "own_baseline": 2.71,
+          "peer_baseline": 2.54,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-02-17",
+          "cost_per_tonne_km": 2.84,
+          "own_baseline": 2.71,
+          "peer_baseline": 2.58,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-02-24",
+          "cost_per_tonne_km": 3.58,
+          "own_baseline": 2.73,
+          "peer_baseline": 2.58,
+          "is_anomaly": true,
+          "flagged_status": "No (justified)"
+        },
+        {
+          "week_of": "2025-03-03",
+          "cost_per_tonne_km": 3.48,
+          "own_baseline": 2.83,
+          "peer_baseline": 2.63,
+          "is_anomaly": true,
+          "flagged_status": "No (justified)"
+        },
+        {
+          "week_of": "2025-03-10",
+          "cost_per_tonne_km": 3.57,
+          "own_baseline": 2.93,
+          "peer_baseline": 2.67,
+          "is_anomaly": true,
+          "flagged_status": "No (justified)"
+        },
+        {
+          "week_of": "2025-03-17",
+          "cost_per_tonne_km": 3.47,
+          "own_baseline": 3.05,
+          "peer_baseline": 2.6,
+          "is_anomaly": true,
+          "flagged_status": "Yes"
+        },
+        {
+          "week_of": "2025-03-24",
+          "cost_per_tonne_km": 2.71,
+          "own_baseline": 3.14,
+          "peer_baseline": 2.52,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-03-31",
+          "cost_per_tonne_km": 2.78,
+          "own_baseline": 3.13,
+          "peer_baseline": 2.63,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-04-07",
+          "cost_per_tonne_km": 2.74,
+          "own_baseline": 3.14,
+          "peer_baseline": 2.54,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-04-14",
+          "cost_per_tonne_km": 2.7,
+          "own_baseline": 3.15,
+          "peer_baseline": 2.51,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-04-21",
+          "cost_per_tonne_km": 2.59,
+          "own_baseline": 3.13,
+          "peer_baseline": 2.59,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-04-28",
+          "cost_per_tonne_km": 2.69,
+          "own_baseline": 3.01,
+          "peer_baseline": 2.61,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-05-05",
+          "cost_per_tonne_km": 2.95,
+          "own_baseline": 2.91,
+          "peer_baseline": 2.66,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-05-12",
+          "cost_per_tonne_km": 2.96,
+          "own_baseline": 2.83,
+          "peer_baseline": 2.62,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-05-19",
+          "cost_per_tonne_km": 2.82,
+          "own_baseline": 2.77,
+          "peer_baseline": 2.7,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-05-26",
+          "cost_per_tonne_km": 2.78,
+          "own_baseline": 2.78,
+          "peer_baseline": 2.73,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-06-02",
+          "cost_per_tonne_km": 2.92,
+          "own_baseline": 2.78,
+          "peer_baseline": 2.67,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-06-09",
+          "cost_per_tonne_km": 2.85,
+          "own_baseline": 2.8,
+          "peer_baseline": 2.71,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-06-16",
+          "cost_per_tonne_km": 2.94,
+          "own_baseline": 2.82,
+          "peer_baseline": 2.74,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-06-23",
+          "cost_per_tonne_km": 2.8,
+          "own_baseline": 2.86,
+          "peer_baseline": 2.76,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-06-30",
+          "cost_per_tonne_km": 2.75,
+          "own_baseline": 2.88,
+          "peer_baseline": 2.73,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-07-07",
+          "cost_per_tonne_km": 2.92,
+          "own_baseline": 2.85,
+          "peer_baseline": 2.77,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-07-14",
+          "cost_per_tonne_km": 2.8,
+          "own_baseline": 2.85,
+          "peer_baseline": 2.71,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-07-21",
+          "cost_per_tonne_km": 2.94,
+          "own_baseline": 2.85,
+          "peer_baseline": 2.76,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-07-28",
+          "cost_per_tonne_km": 2.77,
+          "own_baseline": 2.87,
+          "peer_baseline": 2.7,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-08-04",
+          "cost_per_tonne_km": 2.92,
+          "own_baseline": 2.85,
+          "peer_baseline": 2.67,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-08-11",
+          "cost_per_tonne_km": 2.84,
+          "own_baseline": 2.86,
+          "peer_baseline": 2.69,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-08-18",
+          "cost_per_tonne_km": 2.86,
+          "own_baseline": 2.84,
+          "peer_baseline": 2.73,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-08-25",
+          "cost_per_tonne_km": 2.85,
+          "own_baseline": 2.85,
+          "peer_baseline": 2.73,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-09-01",
+          "cost_per_tonne_km": 2.9,
+          "own_baseline": 2.86,
+          "peer_baseline": 2.68,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-09-08",
+          "cost_per_tonne_km": 2.77,
+          "own_baseline": 2.86,
+          "peer_baseline": 2.69,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-09-15",
+          "cost_per_tonne_km": 2.97,
+          "own_baseline": 2.86,
+          "peer_baseline": 2.8,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-09-22",
+          "cost_per_tonne_km": 2.92,
+          "own_baseline": 2.86,
+          "peer_baseline": 2.66,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-09-29",
+          "cost_per_tonne_km": 2.9,
+          "own_baseline": 2.88,
+          "peer_baseline": 2.77,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-10-06",
+          "cost_per_tonne_km": 2.77,
+          "own_baseline": 2.88,
+          "peer_baseline": 2.81,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-10-13",
+          "cost_per_tonne_km": 2.87,
+          "own_baseline": 2.87,
+          "peer_baseline": 2.7,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-10-20",
+          "cost_per_tonne_km": 2.86,
+          "own_baseline": 2.87,
+          "peer_baseline": 2.71,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-10-27",
+          "cost_per_tonne_km": 2.81,
+          "own_baseline": 2.87,
+          "peer_baseline": 2.71,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-11-03",
+          "cost_per_tonne_km": 2.87,
+          "own_baseline": 2.86,
+          "peer_baseline": 2.78,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-11-10",
+          "cost_per_tonne_km": 2.9,
+          "own_baseline": 2.87,
+          "peer_baseline": 2.67,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-11-17",
+          "cost_per_tonne_km": 2.81,
+          "own_baseline": 2.86,
+          "peer_baseline": 2.75,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-11-24",
+          "cost_per_tonne_km": 2.89,
+          "own_baseline": 2.85,
+          "peer_baseline": 2.67,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-12-01",
+          "cost_per_tonne_km": 2.88,
+          "own_baseline": 2.85,
+          "peer_baseline": 2.75,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-12-08",
+          "cost_per_tonne_km": 2.89,
+          "own_baseline": 2.86,
+          "peer_baseline": 2.81,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-12-15",
+          "cost_per_tonne_km": 2.94,
+          "own_baseline": 2.86,
+          "peer_baseline": 2.73,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-12-22",
+          "cost_per_tonne_km": 2.82,
+          "own_baseline": 2.87,
+          "peer_baseline": 2.79,
+          "is_anomaly": false,
+          "flagged_status": null
+        }
+      ]
+    },
+    "Delhi-Chennai": {
+      "route": "Delhi-Chennai",
+      "route_type": "Long",
+      "origin": "Delhi",
+      "destination": "Chennai",
+      "series": [
+        {
+          "week_of": "2024-01-01",
+          "cost_per_tonne_km": 1.96,
+          "own_baseline": null,
+          "peer_baseline": 2.05,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-01-08",
+          "cost_per_tonne_km": 2.1,
+          "own_baseline": 1.96,
+          "peer_baseline": 2.1,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-01-15",
+          "cost_per_tonne_km": 2.15,
+          "own_baseline": 2.03,
+          "peer_baseline": 2.05,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-01-22",
+          "cost_per_tonne_km": 2.03,
+          "own_baseline": 2.07,
+          "peer_baseline": 2.07,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-01-29",
+          "cost_per_tonne_km": 2.0,
+          "own_baseline": 2.06,
+          "peer_baseline": 2.0,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-02-05",
+          "cost_per_tonne_km": 2.22,
+          "own_baseline": 2.05,
+          "peer_baseline": 2.06,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-02-12",
+          "cost_per_tonne_km": 2.04,
+          "own_baseline": 2.08,
+          "peer_baseline": 2.09,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-02-19",
+          "cost_per_tonne_km": 2.13,
+          "own_baseline": 2.07,
+          "peer_baseline": 1.98,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-02-26",
+          "cost_per_tonne_km": 2.11,
+          "own_baseline": 2.08,
+          "peer_baseline": 1.97,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-03-04",
+          "cost_per_tonne_km": 2.05,
+          "own_baseline": 2.1,
+          "peer_baseline": 1.98,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-03-11",
+          "cost_per_tonne_km": 2.02,
+          "own_baseline": 2.09,
+          "peer_baseline": 2.02,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-03-18",
+          "cost_per_tonne_km": 2.21,
+          "own_baseline": 2.08,
+          "peer_baseline": 2.06,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-03-25",
+          "cost_per_tonne_km": 2.05,
+          "own_baseline": 2.1,
+          "peer_baseline": 2.05,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-04-01",
+          "cost_per_tonne_km": 2.04,
+          "own_baseline": 2.11,
+          "peer_baseline": 2.0,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-04-08",
+          "cost_per_tonne_km": 2.18,
+          "own_baseline": 2.08,
+          "peer_baseline": 1.97,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-04-15",
+          "cost_per_tonne_km": 2.19,
+          "own_baseline": 2.1,
+          "peer_baseline": 2.07,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-04-22",
+          "cost_per_tonne_km": 2.04,
+          "own_baseline": 2.11,
+          "peer_baseline": 2.1,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-04-29",
+          "cost_per_tonne_km": 2.04,
+          "own_baseline": 2.1,
+          "peer_baseline": 2.11,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-05-06",
+          "cost_per_tonne_km": 2.04,
+          "own_baseline": 2.1,
+          "peer_baseline": 1.96,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-05-13",
+          "cost_per_tonne_km": 2.15,
+          "own_baseline": 2.1,
+          "peer_baseline": 2.05,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-05-20",
+          "cost_per_tonne_km": 2.19,
+          "own_baseline": 2.09,
+          "peer_baseline": 2.12,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-05-27",
+          "cost_per_tonne_km": 2.09,
+          "own_baseline": 2.11,
+          "peer_baseline": 2.11,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-06-03",
+          "cost_per_tonne_km": 2.18,
+          "own_baseline": 2.11,
+          "peer_baseline": 2.09,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-06-10",
+          "cost_per_tonne_km": 2.18,
+          "own_baseline": 2.11,
+          "peer_baseline": 1.97,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-06-17",
+          "cost_per_tonne_km": 2.19,
+          "own_baseline": 2.11,
+          "peer_baseline": 2.1,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-06-24",
+          "cost_per_tonne_km": 2.08,
+          "own_baseline": 2.13,
+          "peer_baseline": 2.09,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-07-01",
+          "cost_per_tonne_km": 2.12,
+          "own_baseline": 2.14,
+          "peer_baseline": 1.97,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-07-08",
+          "cost_per_tonne_km": 2.13,
+          "own_baseline": 2.15,
+          "peer_baseline": 2.08,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-07-15",
+          "cost_per_tonne_km": 2.14,
+          "own_baseline": 2.15,
+          "peer_baseline": 2.03,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-07-22",
+          "cost_per_tonne_km": 1.95,
+          "own_baseline": 2.14,
+          "peer_baseline": 2.1,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-07-29",
+          "cost_per_tonne_km": 1.99,
+          "own_baseline": 2.12,
+          "peer_baseline": 2.06,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-08-05",
+          "cost_per_tonne_km": 2.0,
+          "own_baseline": 2.1,
+          "peer_baseline": 2.03,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-08-12",
+          "cost_per_tonne_km": 2.1,
+          "own_baseline": 2.07,
+          "peer_baseline": 2.0,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-08-19",
+          "cost_per_tonne_km": 2.07,
+          "own_baseline": 2.06,
+          "peer_baseline": 2.04,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-08-26",
+          "cost_per_tonne_km": 2.12,
+          "own_baseline": 2.06,
+          "peer_baseline": 1.98,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-09-02",
+          "cost_per_tonne_km": 2.11,
+          "own_baseline": 2.06,
+          "peer_baseline": 1.98,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-09-09",
+          "cost_per_tonne_km": 2.12,
+          "own_baseline": 2.06,
+          "peer_baseline": 1.99,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-09-16",
+          "cost_per_tonne_km": 2.15,
+          "own_baseline": 2.06,
+          "peer_baseline": 2.06,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-09-23",
+          "cost_per_tonne_km": 2.12,
+          "own_baseline": 2.08,
+          "peer_baseline": 2.04,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-09-30",
+          "cost_per_tonne_km": 2.07,
+          "own_baseline": 2.1,
+          "peer_baseline": 2.06,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-10-07",
+          "cost_per_tonne_km": 1.99,
+          "own_baseline": 2.11,
+          "peer_baseline": 2.13,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-10-14",
+          "cost_per_tonne_km": 2.19,
+          "own_baseline": 2.09,
+          "peer_baseline": 2.04,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-10-21",
+          "cost_per_tonne_km": 2.18,
+          "own_baseline": 2.11,
+          "peer_baseline": 1.97,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-10-28",
+          "cost_per_tonne_km": 2.04,
+          "own_baseline": 2.12,
+          "peer_baseline": 2.0,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-11-04",
+          "cost_per_tonne_km": 2.14,
+          "own_baseline": 2.11,
+          "peer_baseline": 2.02,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-11-11",
+          "cost_per_tonne_km": 2.04,
+          "own_baseline": 2.11,
+          "peer_baseline": 2.1,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-11-18",
+          "cost_per_tonne_km": 1.99,
+          "own_baseline": 2.1,
+          "peer_baseline": 2.06,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-11-25",
+          "cost_per_tonne_km": 1.99,
+          "own_baseline": 2.08,
+          "peer_baseline": 1.95,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-12-02",
+          "cost_per_tonne_km": 1.97,
+          "own_baseline": 2.07,
+          "peer_baseline": 2.06,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-12-09",
+          "cost_per_tonne_km": 2.17,
+          "own_baseline": 2.07,
+          "peer_baseline": 2.0,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-12-16",
+          "cost_per_tonne_km": 2.04,
+          "own_baseline": 2.06,
+          "peer_baseline": 2.0,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-12-23",
+          "cost_per_tonne_km": 2.09,
+          "own_baseline": 2.05,
+          "peer_baseline": 2.05,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-12-30",
+          "cost_per_tonne_km": 2.17,
+          "own_baseline": 2.05,
+          "peer_baseline": 1.99,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-01-06",
+          "cost_per_tonne_km": 2.02,
+          "own_baseline": 2.06,
+          "peer_baseline": 2.08,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-01-13",
+          "cost_per_tonne_km": 2.0,
+          "own_baseline": 2.05,
+          "peer_baseline": 2.03,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-01-20",
+          "cost_per_tonne_km": 1.96,
+          "own_baseline": 2.05,
+          "peer_baseline": 2.09,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-01-27",
+          "cost_per_tonne_km": 2.18,
+          "own_baseline": 2.05,
+          "peer_baseline": 1.98,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-02-03",
+          "cost_per_tonne_km": 2.21,
+          "own_baseline": 2.08,
+          "peer_baseline": 2.04,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-02-10",
+          "cost_per_tonne_km": 2.04,
+          "own_baseline": 2.08,
+          "peer_baseline": 2.01,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-02-17",
+          "cost_per_tonne_km": 2.22,
+          "own_baseline": 2.08,
+          "peer_baseline": 1.98,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-02-24",
+          "cost_per_tonne_km": 2.08,
+          "own_baseline": 2.1,
+          "peer_baseline": 2.05,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-03-03",
+          "cost_per_tonne_km": 2.15,
+          "own_baseline": 2.09,
+          "peer_baseline": 2.02,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-03-10",
+          "cost_per_tonne_km": 2.12,
+          "own_baseline": 2.11,
+          "peer_baseline": 2.05,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-03-17",
+          "cost_per_tonne_km": 2.08,
+          "own_baseline": 2.12,
+          "peer_baseline": 2.05,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-03-24",
+          "cost_per_tonne_km": 1.99,
+          "own_baseline": 2.14,
+          "peer_baseline": 2.06,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-03-31",
+          "cost_per_tonne_km": 2.05,
+          "own_baseline": 2.11,
+          "peer_baseline": 2.03,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-04-07",
+          "cost_per_tonne_km": 2.21,
+          "own_baseline": 2.09,
+          "peer_baseline": 2.03,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-04-14",
+          "cost_per_tonne_km": 1.98,
+          "own_baseline": 2.11,
+          "peer_baseline": 1.99,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-04-21",
+          "cost_per_tonne_km": 2.06,
+          "own_baseline": 2.08,
+          "peer_baseline": 2.0,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-04-28",
+          "cost_per_tonne_km": 2.07,
+          "own_baseline": 2.08,
+          "peer_baseline": 1.99,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-05-05",
+          "cost_per_tonne_km": 2.2,
+          "own_baseline": 2.07,
+          "peer_baseline": 2.17,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-05-12",
+          "cost_per_tonne_km": 2.14,
+          "own_baseline": 2.08,
+          "peer_baseline": 2.28,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-05-19",
+          "cost_per_tonne_km": 2.11,
+          "own_baseline": 2.09,
+          "peer_baseline": 2.12,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-05-26",
+          "cost_per_tonne_km": 2.11,
+          "own_baseline": 2.1,
+          "peer_baseline": 2.19,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-06-02",
+          "cost_per_tonne_km": 2.06,
+          "own_baseline": 2.11,
+          "peer_baseline": 2.26,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-06-09",
+          "cost_per_tonne_km": 2.2,
+          "own_baseline": 2.09,
+          "peer_baseline": 2.21,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-06-16",
+          "cost_per_tonne_km": 2.06,
+          "own_baseline": 2.12,
+          "peer_baseline": 2.25,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-06-23",
+          "cost_per_tonne_km": 2.05,
+          "own_baseline": 2.12,
+          "peer_baseline": 2.22,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-06-30",
+          "cost_per_tonne_km": 2.15,
+          "own_baseline": 2.12,
+          "peer_baseline": 2.13,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-07-07",
+          "cost_per_tonne_km": 1.98,
+          "own_baseline": 2.11,
+          "peer_baseline": 2.12,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-07-14",
+          "cost_per_tonne_km": 2.17,
+          "own_baseline": 2.09,
+          "peer_baseline": 2.12,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-07-21",
+          "cost_per_tonne_km": 2.04,
+          "own_baseline": 2.1,
+          "peer_baseline": 2.21,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-07-28",
+          "cost_per_tonne_km": 2.06,
+          "own_baseline": 2.09,
+          "peer_baseline": 2.23,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-08-04",
+          "cost_per_tonne_km": 2.18,
+          "own_baseline": 2.09,
+          "peer_baseline": 2.11,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-08-11",
+          "cost_per_tonne_km": 1.99,
+          "own_baseline": 2.09,
+          "peer_baseline": 2.16,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-08-18",
+          "cost_per_tonne_km": 2.01,
+          "own_baseline": 2.08,
+          "peer_baseline": 2.22,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-08-25",
+          "cost_per_tonne_km": 2.02,
+          "own_baseline": 2.07,
+          "peer_baseline": 2.1,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-09-01",
+          "cost_per_tonne_km": 2.13,
+          "own_baseline": 2.06,
+          "peer_baseline": 2.17,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-09-08",
+          "cost_per_tonne_km": 2.15,
+          "own_baseline": 2.07,
+          "peer_baseline": 2.1,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-09-15",
+          "cost_per_tonne_km": 2.06,
+          "own_baseline": 2.07,
+          "peer_baseline": 2.18,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-09-22",
+          "cost_per_tonne_km": 1.98,
+          "own_baseline": 2.07,
+          "peer_baseline": 2.22,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-09-29",
+          "cost_per_tonne_km": 2.08,
+          "own_baseline": 2.06,
+          "peer_baseline": 2.18,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-10-06",
+          "cost_per_tonne_km": 2.11,
+          "own_baseline": 2.05,
+          "peer_baseline": 2.27,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-10-13",
+          "cost_per_tonne_km": 2.05,
+          "own_baseline": 2.07,
+          "peer_baseline": 2.14,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-10-20",
+          "cost_per_tonne_km": 2.07,
+          "own_baseline": 2.07,
+          "peer_baseline": 2.11,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-10-27",
+          "cost_per_tonne_km": 2.18,
+          "own_baseline": 2.08,
+          "peer_baseline": 2.12,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-11-03",
+          "cost_per_tonne_km": 2.03,
+          "own_baseline": 2.09,
+          "peer_baseline": 2.13,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-11-10",
+          "cost_per_tonne_km": 2.2,
+          "own_baseline": 2.07,
+          "peer_baseline": 2.12,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-11-17",
+          "cost_per_tonne_km": 2.0,
+          "own_baseline": 2.09,
+          "peer_baseline": 2.11,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-11-24",
+          "cost_per_tonne_km": 2.03,
+          "own_baseline": 2.09,
+          "peer_baseline": 2.24,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-12-01",
+          "cost_per_tonne_km": 2.07,
+          "own_baseline": 2.08,
+          "peer_baseline": 2.15,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-12-08",
+          "cost_per_tonne_km": 1.98,
+          "own_baseline": 2.08,
+          "peer_baseline": 2.17,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-12-15",
+          "cost_per_tonne_km": 1.97,
+          "own_baseline": 2.07,
+          "peer_baseline": 2.14,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-12-22",
+          "cost_per_tonne_km": 1.99,
+          "own_baseline": 2.06,
+          "peer_baseline": 2.22,
+          "is_anomaly": false,
+          "flagged_status": null
+        }
+      ]
+    },
+    "Delhi-Jaipur": {
+      "route": "Delhi-Jaipur",
+      "route_type": "Short",
+      "origin": "Delhi",
+      "destination": "Jaipur",
+      "series": [
+        {
+          "week_of": "2024-01-01",
+          "cost_per_tonne_km": 3.0,
+          "own_baseline": null,
+          "peer_baseline": 3.3,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-01-08",
+          "cost_per_tonne_km": 3.05,
+          "own_baseline": 3.0,
+          "peer_baseline": 3.38,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-01-15",
+          "cost_per_tonne_km": 3.02,
+          "own_baseline": 3.03,
+          "peer_baseline": 3.41,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-01-22",
+          "cost_per_tonne_km": 2.99,
+          "own_baseline": 3.02,
+          "peer_baseline": 3.38,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-01-29",
+          "cost_per_tonne_km": 3.19,
+          "own_baseline": 3.02,
+          "peer_baseline": 3.28,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-02-05",
+          "cost_per_tonne_km": 3.02,
+          "own_baseline": 3.05,
+          "peer_baseline": 3.29,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-02-12",
+          "cost_per_tonne_km": 3.11,
+          "own_baseline": 3.05,
+          "peer_baseline": 3.28,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-02-19",
+          "cost_per_tonne_km": 2.99,
+          "own_baseline": 3.06,
+          "peer_baseline": 3.38,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-02-26",
+          "cost_per_tonne_km": 3.1,
+          "own_baseline": 3.05,
+          "peer_baseline": 3.25,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-03-04",
+          "cost_per_tonne_km": 3.0,
+          "own_baseline": 3.06,
+          "peer_baseline": 3.41,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-03-11",
+          "cost_per_tonne_km": 3.11,
+          "own_baseline": 3.05,
+          "peer_baseline": 3.34,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-03-18",
+          "cost_per_tonne_km": 3.08,
+          "own_baseline": 3.07,
+          "peer_baseline": 3.41,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-03-25",
+          "cost_per_tonne_km": 3.17,
+          "own_baseline": 3.08,
+          "peer_baseline": 3.53,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-04-01",
+          "cost_per_tonne_km": 2.99,
+          "own_baseline": 3.07,
+          "peer_baseline": 3.33,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-04-08",
+          "cost_per_tonne_km": 3.13,
+          "own_baseline": 3.07,
+          "peer_baseline": 3.49,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-04-15",
+          "cost_per_tonne_km": 3.2,
+          "own_baseline": 3.07,
+          "peer_baseline": 3.57,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-04-22",
+          "cost_per_tonne_km": 3.06,
+          "own_baseline": 3.1,
+          "peer_baseline": 3.33,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-04-29",
+          "cost_per_tonne_km": 3.07,
+          "own_baseline": 3.09,
+          "peer_baseline": 3.52,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-05-06",
+          "cost_per_tonne_km": 3.1,
+          "own_baseline": 3.1,
+          "peer_baseline": 3.5,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-05-13",
+          "cost_per_tonne_km": 3.06,
+          "own_baseline": 3.1,
+          "peer_baseline": 3.3,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-05-20",
+          "cost_per_tonne_km": 3.05,
+          "own_baseline": 3.1,
+          "peer_baseline": 3.34,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-05-27",
+          "cost_per_tonne_km": 3.11,
+          "own_baseline": 3.08,
+          "peer_baseline": 3.44,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-06-03",
+          "cost_per_tonne_km": 3.14,
+          "own_baseline": 3.1,
+          "peer_baseline": 3.38,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-06-10",
+          "cost_per_tonne_km": 3.03,
+          "own_baseline": 3.1,
+          "peer_baseline": 3.53,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-06-17",
+          "cost_per_tonne_km": 3.17,
+          "own_baseline": 3.08,
+          "peer_baseline": 3.33,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-06-24",
+          "cost_per_tonne_km": 3.1,
+          "own_baseline": 3.09,
+          "peer_baseline": 3.35,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-07-01",
+          "cost_per_tonne_km": 3.19,
+          "own_baseline": 3.1,
+          "peer_baseline": 3.37,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-07-08",
+          "cost_per_tonne_km": 3.12,
+          "own_baseline": 3.11,
+          "peer_baseline": 3.55,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-07-15",
+          "cost_per_tonne_km": 3.09,
+          "own_baseline": 3.11,
+          "peer_baseline": 3.44,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-07-22",
+          "cost_per_tonne_km": 3.13,
+          "own_baseline": 3.12,
+          "peer_baseline": 3.52,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-07-29",
+          "cost_per_tonne_km": 3.15,
+          "own_baseline": 3.12,
+          "peer_baseline": 3.39,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-08-05",
+          "cost_per_tonne_km": 3.06,
+          "own_baseline": 3.12,
+          "peer_baseline": 3.37,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-08-12",
+          "cost_per_tonne_km": 3.0,
+          "own_baseline": 3.13,
+          "peer_baseline": 3.35,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-08-19",
+          "cost_per_tonne_km": 3.08,
+          "own_baseline": 3.1,
+          "peer_baseline": 3.42,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-08-26",
+          "cost_per_tonne_km": 3.11,
+          "own_baseline": 3.1,
+          "peer_baseline": 3.39,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-09-02",
+          "cost_per_tonne_km": 3.08,
+          "own_baseline": 3.09,
+          "peer_baseline": 3.29,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-09-09",
+          "cost_per_tonne_km": 3.17,
+          "own_baseline": 3.09,
+          "peer_baseline": 3.28,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-09-16",
+          "cost_per_tonne_km": 3.16,
+          "own_baseline": 3.1,
+          "peer_baseline": 3.43,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-09-23",
+          "cost_per_tonne_km": 3.15,
+          "own_baseline": 3.1,
+          "peer_baseline": 3.47,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-09-30",
+          "cost_per_tonne_km": 3.02,
+          "own_baseline": 3.1,
+          "peer_baseline": 3.42,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-10-07",
+          "cost_per_tonne_km": 3.09,
+          "own_baseline": 3.1,
+          "peer_baseline": 3.51,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-10-14",
+          "cost_per_tonne_km": 3.09,
+          "own_baseline": 3.11,
+          "peer_baseline": 3.35,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-10-21",
+          "cost_per_tonne_km": 3.08,
+          "own_baseline": 3.11,
+          "peer_baseline": 3.34,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-10-28",
+          "cost_per_tonne_km": 3.03,
+          "own_baseline": 3.11,
+          "peer_baseline": 3.49,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-11-04",
+          "cost_per_tonne_km": 3.01,
+          "own_baseline": 3.1,
+          "peer_baseline": 3.42,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-11-11",
+          "cost_per_tonne_km": 4.17,
+          "own_baseline": 3.08,
+          "peer_baseline": 3.45,
+          "is_anomaly": true,
+          "flagged_status": "Yes"
+        },
+        {
+          "week_of": "2024-11-18",
+          "cost_per_tonne_km": 4.09,
+          "own_baseline": 3.21,
+          "peer_baseline": 3.42,
+          "is_anomaly": true,
+          "flagged_status": "Yes"
+        },
+        {
+          "week_of": "2024-11-25",
+          "cost_per_tonne_km": 3.06,
+          "own_baseline": 3.32,
+          "peer_baseline": 3.43,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-12-02",
+          "cost_per_tonne_km": 3.05,
+          "own_baseline": 3.33,
+          "peer_baseline": 3.44,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-12-09",
+          "cost_per_tonne_km": 3.22,
+          "own_baseline": 3.32,
+          "peer_baseline": 3.43,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-12-16",
+          "cost_per_tonne_km": 3.08,
+          "own_baseline": 3.34,
+          "peer_baseline": 3.55,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-12-23",
+          "cost_per_tonne_km": 3.11,
+          "own_baseline": 3.34,
+          "peer_baseline": 3.51,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-12-30",
+          "cost_per_tonne_km": 3.22,
+          "own_baseline": 3.35,
+          "peer_baseline": 3.4,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-01-06",
+          "cost_per_tonne_km": 3.17,
+          "own_baseline": 3.37,
+          "peer_baseline": 3.5,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-01-13",
+          "cost_per_tonne_km": 3.05,
+          "own_baseline": 3.25,
+          "peer_baseline": 3.53,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-01-20",
+          "cost_per_tonne_km": 3.06,
+          "own_baseline": 3.12,
+          "peer_baseline": 3.5,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-01-27",
+          "cost_per_tonne_km": 3.14,
+          "own_baseline": 3.12,
+          "peer_baseline": 3.39,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-02-03",
+          "cost_per_tonne_km": 3.02,
+          "own_baseline": 3.13,
+          "peer_baseline": 3.33,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-02-10",
+          "cost_per_tonne_km": 2.99,
+          "own_baseline": 3.11,
+          "peer_baseline": 3.39,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-02-17",
+          "cost_per_tonne_km": 3.1,
+          "own_baseline": 3.09,
+          "peer_baseline": 3.41,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-02-24",
+          "cost_per_tonne_km": 3.08,
+          "own_baseline": 3.09,
+          "peer_baseline": 3.41,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-03-03",
+          "cost_per_tonne_km": 3.22,
+          "own_baseline": 3.08,
+          "peer_baseline": 3.5,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-03-10",
+          "cost_per_tonne_km": 3.18,
+          "own_baseline": 3.08,
+          "peer_baseline": 3.52,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-03-17",
+          "cost_per_tonne_km": 3.08,
+          "own_baseline": 3.1,
+          "peer_baseline": 3.39,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-03-24",
+          "cost_per_tonne_km": 3.14,
+          "own_baseline": 3.1,
+          "peer_baseline": 3.35,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-03-31",
+          "cost_per_tonne_km": 3.06,
+          "own_baseline": 3.1,
+          "peer_baseline": 3.23,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-04-07",
+          "cost_per_tonne_km": 3.19,
+          "own_baseline": 3.11,
+          "peer_baseline": 3.53,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-04-14",
+          "cost_per_tonne_km": 3.0,
+          "own_baseline": 3.13,
+          "peer_baseline": 3.4,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-04-21",
+          "cost_per_tonne_km": 3.07,
+          "own_baseline": 3.12,
+          "peer_baseline": 3.29,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-04-28",
+          "cost_per_tonne_km": 3.03,
+          "own_baseline": 3.12,
+          "peer_baseline": 3.41,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-05-05",
+          "cost_per_tonne_km": 3.32,
+          "own_baseline": 3.09,
+          "peer_baseline": 3.61,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-05-12",
+          "cost_per_tonne_km": 3.18,
+          "own_baseline": 3.11,
+          "peer_baseline": 3.59,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-05-19",
+          "cost_per_tonne_km": 3.32,
+          "own_baseline": 3.12,
+          "peer_baseline": 3.47,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-05-26",
+          "cost_per_tonne_km": 3.28,
+          "own_baseline": 3.15,
+          "peer_baseline": 3.48,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-06-02",
+          "cost_per_tonne_km": 3.14,
+          "own_baseline": 3.18,
+          "peer_baseline": 3.57,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-06-09",
+          "cost_per_tonne_km": 3.28,
+          "own_baseline": 3.17,
+          "peer_baseline": 3.47,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-06-16",
+          "cost_per_tonne_km": 3.29,
+          "own_baseline": 3.2,
+          "peer_baseline": 3.72,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-06-23",
+          "cost_per_tonne_km": 3.12,
+          "own_baseline": 3.23,
+          "peer_baseline": 3.76,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-06-30",
+          "cost_per_tonne_km": 3.34,
+          "own_baseline": 3.24,
+          "peer_baseline": 3.54,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-07-07",
+          "cost_per_tonne_km": 3.23,
+          "own_baseline": 3.24,
+          "peer_baseline": 3.64,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-07-14",
+          "cost_per_tonne_km": 3.39,
+          "own_baseline": 3.25,
+          "peer_baseline": 3.59,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-07-21",
+          "cost_per_tonne_km": 3.21,
+          "own_baseline": 3.26,
+          "peer_baseline": 3.53,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-07-28",
+          "cost_per_tonne_km": 3.34,
+          "own_baseline": 3.25,
+          "peer_baseline": 3.56,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-08-04",
+          "cost_per_tonne_km": 3.34,
+          "own_baseline": 3.27,
+          "peer_baseline": 3.73,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-08-11",
+          "cost_per_tonne_km": 3.37,
+          "own_baseline": 3.28,
+          "peer_baseline": 3.53,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-08-18",
+          "cost_per_tonne_km": 3.28,
+          "own_baseline": 3.29,
+          "peer_baseline": 3.79,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-08-25",
+          "cost_per_tonne_km": 3.23,
+          "own_baseline": 3.31,
+          "peer_baseline": 3.63,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-09-01",
+          "cost_per_tonne_km": 3.45,
+          "own_baseline": 3.3,
+          "peer_baseline": 3.67,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-09-08",
+          "cost_per_tonne_km": 3.25,
+          "own_baseline": 3.33,
+          "peer_baseline": 3.72,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-09-15",
+          "cost_per_tonne_km": 3.22,
+          "own_baseline": 3.31,
+          "peer_baseline": 3.98,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-09-22",
+          "cost_per_tonne_km": 3.21,
+          "own_baseline": 3.31,
+          "peer_baseline": 3.8,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-09-29",
+          "cost_per_tonne_km": 3.44,
+          "own_baseline": 3.29,
+          "peer_baseline": 3.82,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-10-06",
+          "cost_per_tonne_km": 3.21,
+          "own_baseline": 3.31,
+          "peer_baseline": 3.94,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-10-13",
+          "cost_per_tonne_km": 3.3,
+          "own_baseline": 3.29,
+          "peer_baseline": 3.87,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-10-20",
+          "cost_per_tonne_km": 3.28,
+          "own_baseline": 3.29,
+          "peer_baseline": 4.1,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-10-27",
+          "cost_per_tonne_km": 3.18,
+          "own_baseline": 3.3,
+          "peer_baseline": 4.07,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-11-03",
+          "cost_per_tonne_km": 3.38,
+          "own_baseline": 3.26,
+          "peer_baseline": 4.2,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-11-10",
+          "cost_per_tonne_km": 3.27,
+          "own_baseline": 3.28,
+          "peer_baseline": 3.97,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-11-17",
+          "cost_per_tonne_km": 3.28,
+          "own_baseline": 3.28,
+          "peer_baseline": 4.32,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-11-24",
+          "cost_per_tonne_km": 3.38,
+          "own_baseline": 3.29,
+          "peer_baseline": 4.16,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-12-01",
+          "cost_per_tonne_km": 3.2,
+          "own_baseline": 3.29,
+          "peer_baseline": 4.39,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-12-08",
+          "cost_per_tonne_km": 3.19,
+          "own_baseline": 3.28,
+          "peer_baseline": 4.43,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-12-15",
+          "cost_per_tonne_km": 3.24,
+          "own_baseline": 3.27,
+          "peer_baseline": 4.39,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-12-22",
+          "cost_per_tonne_km": 3.23,
+          "own_baseline": 3.26,
+          "peer_baseline": 4.49,
+          "is_anomaly": false,
+          "flagged_status": null
+        }
+      ]
+    },
+    "Kolkata-Bhubaneswar": {
+      "route": "Kolkata-Bhubaneswar",
+      "route_type": "Medium",
+      "origin": "Kolkata",
+      "destination": "Bhubaneswar",
+      "series": [
+        {
+          "week_of": "2024-01-01",
+          "cost_per_tonne_km": 2.51,
+          "own_baseline": null,
+          "peer_baseline": 2.59,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-01-08",
+          "cost_per_tonne_km": 2.63,
+          "own_baseline": 2.51,
+          "peer_baseline": 2.67,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-01-15",
+          "cost_per_tonne_km": 2.51,
+          "own_baseline": 2.57,
+          "peer_baseline": 2.62,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-01-22",
+          "cost_per_tonne_km": 2.57,
+          "own_baseline": 2.55,
+          "peer_baseline": 2.72,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-01-29",
+          "cost_per_tonne_km": 2.62,
+          "own_baseline": 2.55,
+          "peer_baseline": 2.59,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-02-05",
+          "cost_per_tonne_km": 2.66,
+          "own_baseline": 2.57,
+          "peer_baseline": 2.62,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-02-12",
+          "cost_per_tonne_km": 2.7,
+          "own_baseline": 2.58,
+          "peer_baseline": 2.62,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-02-19",
+          "cost_per_tonne_km": 2.69,
+          "own_baseline": 2.6,
+          "peer_baseline": 2.59,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-02-26",
+          "cost_per_tonne_km": 2.65,
+          "own_baseline": 2.61,
+          "peer_baseline": 2.6,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-03-04",
+          "cost_per_tonne_km": 2.51,
+          "own_baseline": 2.63,
+          "peer_baseline": 2.58,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-03-11",
+          "cost_per_tonne_km": 2.67,
+          "own_baseline": 2.62,
+          "peer_baseline": 2.7,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-03-18",
+          "cost_per_tonne_km": 2.69,
+          "own_baseline": 2.64,
+          "peer_baseline": 2.56,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-03-25",
+          "cost_per_tonne_km": 2.67,
+          "own_baseline": 2.65,
+          "peer_baseline": 2.69,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-04-01",
+          "cost_per_tonne_km": 2.52,
+          "own_baseline": 2.66,
+          "peer_baseline": 2.63,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-04-08",
+          "cost_per_tonne_km": 2.55,
+          "own_baseline": 2.64,
+          "peer_baseline": 2.67,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-04-15",
+          "cost_per_tonne_km": 2.62,
+          "own_baseline": 2.62,
+          "peer_baseline": 2.57,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-04-22",
+          "cost_per_tonne_km": 2.54,
+          "own_baseline": 2.61,
+          "peer_baseline": 2.63,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-04-29",
+          "cost_per_tonne_km": 2.54,
+          "own_baseline": 2.6,
+          "peer_baseline": 2.62,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-05-06",
+          "cost_per_tonne_km": 2.66,
+          "own_baseline": 2.6,
+          "peer_baseline": 2.58,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-05-13",
+          "cost_per_tonne_km": 2.55,
+          "own_baseline": 2.6,
+          "peer_baseline": 2.71,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-05-20",
+          "cost_per_tonne_km": 2.73,
+          "own_baseline": 2.58,
+          "peer_baseline": 2.63,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-05-27",
+          "cost_per_tonne_km": 2.6,
+          "own_baseline": 2.59,
+          "peer_baseline": 2.61,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-06-03",
+          "cost_per_tonne_km": 2.6,
+          "own_baseline": 2.6,
+          "peer_baseline": 2.62,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-06-10",
+          "cost_per_tonne_km": 2.48,
+          "own_baseline": 2.6,
+          "peer_baseline": 2.52,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-06-17",
+          "cost_per_tonne_km": 2.58,
+          "own_baseline": 2.59,
+          "peer_baseline": 2.66,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-06-24",
+          "cost_per_tonne_km": 2.7,
+          "own_baseline": 2.59,
+          "peer_baseline": 2.64,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-07-01",
+          "cost_per_tonne_km": 2.53,
+          "own_baseline": 2.61,
+          "peer_baseline": 2.69,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-07-08",
+          "cost_per_tonne_km": 2.63,
+          "own_baseline": 2.6,
+          "peer_baseline": 2.63,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-07-15",
+          "cost_per_tonne_km": 2.68,
+          "own_baseline": 2.61,
+          "peer_baseline": 2.67,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-07-22",
+          "cost_per_tonne_km": 2.65,
+          "own_baseline": 2.6,
+          "peer_baseline": 2.59,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-07-29",
+          "cost_per_tonne_km": 2.59,
+          "own_baseline": 2.61,
+          "peer_baseline": 2.61,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-08-05",
+          "cost_per_tonne_km": 2.68,
+          "own_baseline": 2.61,
+          "peer_baseline": 2.57,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-08-12",
+          "cost_per_tonne_km": 2.56,
+          "own_baseline": 2.63,
+          "peer_baseline": 2.62,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-08-19",
+          "cost_per_tonne_km": 2.63,
+          "own_baseline": 2.63,
+          "peer_baseline": 2.71,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-08-26",
+          "cost_per_tonne_km": 2.52,
+          "own_baseline": 2.62,
+          "peer_baseline": 2.62,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-09-02",
+          "cost_per_tonne_km": 2.55,
+          "own_baseline": 2.62,
+          "peer_baseline": 2.53,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-09-09",
+          "cost_per_tonne_km": 2.58,
+          "own_baseline": 2.61,
+          "peer_baseline": 2.61,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-09-16",
+          "cost_per_tonne_km": 2.69,
+          "own_baseline": 2.59,
+          "peer_baseline": 2.62,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-09-23",
+          "cost_per_tonne_km": 2.72,
+          "own_baseline": 2.6,
+          "peer_baseline": 2.56,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-09-30",
+          "cost_per_tonne_km": 2.7,
+          "own_baseline": 2.62,
+          "peer_baseline": 2.56,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-10-07",
+          "cost_per_tonne_km": 2.7,
+          "own_baseline": 2.62,
+          "peer_baseline": 2.6,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-10-14",
+          "cost_per_tonne_km": 2.62,
+          "own_baseline": 2.64,
+          "peer_baseline": 2.55,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-10-21",
+          "cost_per_tonne_km": 2.67,
+          "own_baseline": 2.63,
+          "peer_baseline": 2.64,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-10-28",
+          "cost_per_tonne_km": 2.53,
+          "own_baseline": 2.65,
+          "peer_baseline": 2.64,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-11-04",
+          "cost_per_tonne_km": 2.56,
+          "own_baseline": 2.65,
+          "peer_baseline": 2.63,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-11-11",
+          "cost_per_tonne_km": 2.61,
+          "own_baseline": 2.65,
+          "peer_baseline": 2.67,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-11-18",
+          "cost_per_tonne_km": 2.55,
+          "own_baseline": 2.64,
+          "peer_baseline": 2.68,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-11-25",
+          "cost_per_tonne_km": 2.67,
+          "own_baseline": 2.62,
+          "peer_baseline": 2.68,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-12-02",
+          "cost_per_tonne_km": 2.56,
+          "own_baseline": 2.61,
+          "peer_baseline": 2.61,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-12-09",
+          "cost_per_tonne_km": 2.51,
+          "own_baseline": 2.6,
+          "peer_baseline": 2.57,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-12-16",
+          "cost_per_tonne_km": 2.59,
+          "own_baseline": 2.58,
+          "peer_baseline": 2.57,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-12-23",
+          "cost_per_tonne_km": 2.7,
+          "own_baseline": 2.57,
+          "peer_baseline": 2.69,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-12-30",
+          "cost_per_tonne_km": 2.63,
+          "own_baseline": 2.59,
+          "peer_baseline": 2.64,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-01-06",
+          "cost_per_tonne_km": 2.51,
+          "own_baseline": 2.6,
+          "peer_baseline": 2.62,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-01-13",
+          "cost_per_tonne_km": 2.65,
+          "own_baseline": 2.59,
+          "peer_baseline": 2.59,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-01-20",
+          "cost_per_tonne_km": 2.57,
+          "own_baseline": 2.6,
+          "peer_baseline": 3.04,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-01-27",
+          "cost_per_tonne_km": 2.57,
+          "own_baseline": 2.59,
+          "peer_baseline": 2.6,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-02-03",
+          "cost_per_tonne_km": 2.54,
+          "own_baseline": 2.59,
+          "peer_baseline": 2.59,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-02-10",
+          "cost_per_tonne_km": 2.63,
+          "own_baseline": 2.6,
+          "peer_baseline": 2.58,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-02-17",
+          "cost_per_tonne_km": 2.65,
+          "own_baseline": 2.6,
+          "peer_baseline": 2.68,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-02-24",
+          "cost_per_tonne_km": 2.66,
+          "own_baseline": 2.6,
+          "peer_baseline": 3.04,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-03-03",
+          "cost_per_tonne_km": 2.68,
+          "own_baseline": 2.6,
+          "peer_baseline": 3.03,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-03-10",
+          "cost_per_tonne_km": 2.7,
+          "own_baseline": 2.62,
+          "peer_baseline": 3.1,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-03-17",
+          "cost_per_tonne_km": 2.54,
+          "own_baseline": 2.63,
+          "peer_baseline": 3.06,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-03-24",
+          "cost_per_tonne_km": 2.61,
+          "own_baseline": 2.62,
+          "peer_baseline": 2.57,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-03-31",
+          "cost_per_tonne_km": 2.65,
+          "own_baseline": 2.63,
+          "peer_baseline": 2.7,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-04-07",
+          "cost_per_tonne_km": 2.58,
+          "own_baseline": 2.64,
+          "peer_baseline": 2.62,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-04-14",
+          "cost_per_tonne_km": 2.57,
+          "own_baseline": 2.63,
+          "peer_baseline": 2.57,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-04-21",
+          "cost_per_tonne_km": 2.6,
+          "own_baseline": 2.62,
+          "peer_baseline": 2.59,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-04-28",
+          "cost_per_tonne_km": 2.58,
+          "own_baseline": 2.61,
+          "peer_baseline": 2.67,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-05-05",
+          "cost_per_tonne_km": 2.73,
+          "own_baseline": 2.6,
+          "peer_baseline": 2.77,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-05-12",
+          "cost_per_tonne_km": 2.63,
+          "own_baseline": 2.61,
+          "peer_baseline": 2.78,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-05-19",
+          "cost_per_tonne_km": 2.77,
+          "own_baseline": 2.62,
+          "peer_baseline": 2.73,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-05-26",
+          "cost_per_tonne_km": 2.84,
+          "own_baseline": 2.64,
+          "peer_baseline": 2.7,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-06-02",
+          "cost_per_tonne_km": 2.7,
+          "own_baseline": 2.66,
+          "peer_baseline": 2.78,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-06-09",
+          "cost_per_tonne_km": 2.68,
+          "own_baseline": 2.68,
+          "peer_baseline": 2.8,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-06-16",
+          "cost_per_tonne_km": 2.68,
+          "own_baseline": 2.69,
+          "peer_baseline": 2.88,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-06-23",
+          "cost_per_tonne_km": 2.73,
+          "own_baseline": 2.7,
+          "peer_baseline": 2.8,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-06-30",
+          "cost_per_tonne_km": 2.76,
+          "own_baseline": 2.72,
+          "peer_baseline": 2.73,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-07-07",
+          "cost_per_tonne_km": 2.85,
+          "own_baseline": 2.72,
+          "peer_baseline": 2.8,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-07-14",
+          "cost_per_tonne_km": 2.72,
+          "own_baseline": 2.75,
+          "peer_baseline": 2.75,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-07-21",
+          "cost_per_tonne_km": 2.73,
+          "own_baseline": 2.74,
+          "peer_baseline": 2.87,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-07-28",
+          "cost_per_tonne_km": 2.72,
+          "own_baseline": 2.73,
+          "peer_baseline": 2.72,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-08-04",
+          "cost_per_tonne_km": 2.68,
+          "own_baseline": 2.73,
+          "peer_baseline": 2.8,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-08-11",
+          "cost_per_tonne_km": 2.76,
+          "own_baseline": 2.73,
+          "peer_baseline": 2.73,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-08-18",
+          "cost_per_tonne_km": 2.85,
+          "own_baseline": 2.74,
+          "peer_baseline": 2.73,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-08-25",
+          "cost_per_tonne_km": 2.83,
+          "own_baseline": 2.76,
+          "peer_baseline": 2.74,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-09-01",
+          "cost_per_tonne_km": 2.65,
+          "own_baseline": 2.77,
+          "peer_baseline": 2.8,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-09-08",
+          "cost_per_tonne_km": 2.75,
+          "own_baseline": 2.74,
+          "peer_baseline": 2.7,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-09-15",
+          "cost_per_tonne_km": 2.79,
+          "own_baseline": 2.75,
+          "peer_baseline": 2.89,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-09-22",
+          "cost_per_tonne_km": 2.68,
+          "own_baseline": 2.75,
+          "peer_baseline": 2.78,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-09-29",
+          "cost_per_tonne_km": 2.84,
+          "own_baseline": 2.75,
+          "peer_baseline": 2.8,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-10-06",
+          "cost_per_tonne_km": 2.88,
+          "own_baseline": 2.77,
+          "peer_baseline": 2.76,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-10-13",
+          "cost_per_tonne_km": 2.68,
+          "own_baseline": 2.78,
+          "peer_baseline": 2.8,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-10-20",
+          "cost_per_tonne_km": 2.69,
+          "own_baseline": 2.76,
+          "peer_baseline": 2.8,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-10-27",
+          "cost_per_tonne_km": 2.75,
+          "own_baseline": 2.74,
+          "peer_baseline": 2.74,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-11-03",
+          "cost_per_tonne_km": 2.82,
+          "own_baseline": 2.76,
+          "peer_baseline": 2.81,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-11-10",
+          "cost_per_tonne_km": 2.73,
+          "own_baseline": 2.77,
+          "peer_baseline": 2.75,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-11-17",
+          "cost_per_tonne_km": 2.75,
+          "own_baseline": 2.76,
+          "peer_baseline": 2.78,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-11-24",
+          "cost_per_tonne_km": 2.72,
+          "own_baseline": 2.77,
+          "peer_baseline": 2.75,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-12-01",
+          "cost_per_tonne_km": 2.71,
+          "own_baseline": 2.75,
+          "peer_baseline": 2.83,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-12-08",
+          "cost_per_tonne_km": 2.82,
+          "own_baseline": 2.73,
+          "peer_baseline": 2.84,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-12-15",
+          "cost_per_tonne_km": 2.73,
+          "own_baseline": 2.75,
+          "peer_baseline": 2.84,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-12-22",
+          "cost_per_tonne_km": 2.84,
+          "own_baseline": 2.75,
+          "peer_baseline": 2.78,
+          "is_anomaly": false,
+          "flagged_status": null
+        }
+      ]
+    },
+    "Mumbai-Delhi": {
+      "route": "Mumbai-Delhi",
+      "route_type": "Long",
+      "origin": "Mumbai",
+      "destination": "Delhi",
+      "series": [
+        {
+          "week_of": "2024-01-01",
+          "cost_per_tonne_km": 2.05,
+          "own_baseline": null,
+          "peer_baseline": 1.96,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-01-08",
+          "cost_per_tonne_km": 2.1,
+          "own_baseline": 2.05,
+          "peer_baseline": 2.1,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-01-15",
+          "cost_per_tonne_km": 2.05,
+          "own_baseline": 2.08,
+          "peer_baseline": 2.15,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-01-22",
+          "cost_per_tonne_km": 2.07,
+          "own_baseline": 2.07,
+          "peer_baseline": 2.03,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-01-29",
+          "cost_per_tonne_km": 2.0,
+          "own_baseline": 2.07,
+          "peer_baseline": 2.0,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-02-05",
+          "cost_per_tonne_km": 2.06,
+          "own_baseline": 2.05,
+          "peer_baseline": 2.22,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-02-12",
+          "cost_per_tonne_km": 2.09,
+          "own_baseline": 2.06,
+          "peer_baseline": 2.04,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-02-19",
+          "cost_per_tonne_km": 1.98,
+          "own_baseline": 2.06,
+          "peer_baseline": 2.13,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-02-26",
+          "cost_per_tonne_km": 1.97,
+          "own_baseline": 2.05,
+          "peer_baseline": 2.11,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-03-04",
+          "cost_per_tonne_km": 1.98,
+          "own_baseline": 2.04,
+          "peer_baseline": 2.05,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-03-11",
+          "cost_per_tonne_km": 2.02,
+          "own_baseline": 2.03,
+          "peer_baseline": 2.02,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-03-18",
+          "cost_per_tonne_km": 2.06,
+          "own_baseline": 2.02,
+          "peer_baseline": 2.21,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-03-25",
+          "cost_per_tonne_km": 2.05,
+          "own_baseline": 2.02,
+          "peer_baseline": 2.05,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-04-01",
+          "cost_per_tonne_km": 2.0,
+          "own_baseline": 2.03,
+          "peer_baseline": 2.04,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-04-08",
+          "cost_per_tonne_km": 1.97,
+          "own_baseline": 2.02,
+          "peer_baseline": 2.18,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-04-15",
+          "cost_per_tonne_km": 2.07,
+          "own_baseline": 2.0,
+          "peer_baseline": 2.19,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-04-22",
+          "cost_per_tonne_km": 2.1,
+          "own_baseline": 2.02,
+          "peer_baseline": 2.04,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-04-29",
+          "cost_per_tonne_km": 2.11,
+          "own_baseline": 2.03,
+          "peer_baseline": 2.04,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-05-06",
+          "cost_per_tonne_km": 1.96,
+          "own_baseline": 2.05,
+          "peer_baseline": 2.04,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-05-13",
+          "cost_per_tonne_km": 2.05,
+          "own_baseline": 2.04,
+          "peer_baseline": 2.15,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-05-20",
+          "cost_per_tonne_km": 2.12,
+          "own_baseline": 2.04,
+          "peer_baseline": 2.19,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-05-27",
+          "cost_per_tonne_km": 2.11,
+          "own_baseline": 2.05,
+          "peer_baseline": 2.09,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-06-03",
+          "cost_per_tonne_km": 2.09,
+          "own_baseline": 2.06,
+          "peer_baseline": 2.18,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-06-10",
+          "cost_per_tonne_km": 1.97,
+          "own_baseline": 2.08,
+          "peer_baseline": 2.18,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-06-17",
+          "cost_per_tonne_km": 2.1,
+          "own_baseline": 2.06,
+          "peer_baseline": 2.19,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-06-24",
+          "cost_per_tonne_km": 2.09,
+          "own_baseline": 2.06,
+          "peer_baseline": 2.08,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-07-01",
+          "cost_per_tonne_km": 1.97,
+          "own_baseline": 2.06,
+          "peer_baseline": 2.12,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-07-08",
+          "cost_per_tonne_km": 2.08,
+          "own_baseline": 2.06,
+          "peer_baseline": 2.13,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-07-15",
+          "cost_per_tonne_km": 2.03,
+          "own_baseline": 2.07,
+          "peer_baseline": 2.14,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-07-22",
+          "cost_per_tonne_km": 2.1,
+          "own_baseline": 2.05,
+          "peer_baseline": 1.95,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-07-29",
+          "cost_per_tonne_km": 2.06,
+          "own_baseline": 2.05,
+          "peer_baseline": 1.99,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-08-05",
+          "cost_per_tonne_km": 2.03,
+          "own_baseline": 2.05,
+          "peer_baseline": 2.0,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-08-12",
+          "cost_per_tonne_km": 2.0,
+          "own_baseline": 2.06,
+          "peer_baseline": 2.1,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-08-19",
+          "cost_per_tonne_km": 2.04,
+          "own_baseline": 2.04,
+          "peer_baseline": 2.07,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-08-26",
+          "cost_per_tonne_km": 1.98,
+          "own_baseline": 2.04,
+          "peer_baseline": 2.12,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-09-02",
+          "cost_per_tonne_km": 1.98,
+          "own_baseline": 2.04,
+          "peer_baseline": 2.11,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-09-09",
+          "cost_per_tonne_km": 1.99,
+          "own_baseline": 2.03,
+          "peer_baseline": 2.12,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-09-16",
+          "cost_per_tonne_km": 2.06,
+          "own_baseline": 2.02,
+          "peer_baseline": 2.15,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-09-23",
+          "cost_per_tonne_km": 2.04,
+          "own_baseline": 2.02,
+          "peer_baseline": 2.12,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-09-30",
+          "cost_per_tonne_km": 2.06,
+          "own_baseline": 2.01,
+          "peer_baseline": 2.07,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-10-07",
+          "cost_per_tonne_km": 2.13,
+          "own_baseline": 2.02,
+          "peer_baseline": 1.99,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-10-14",
+          "cost_per_tonne_km": 2.04,
+          "own_baseline": 2.03,
+          "peer_baseline": 2.19,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-10-21",
+          "cost_per_tonne_km": 1.97,
+          "own_baseline": 2.03,
+          "peer_baseline": 2.18,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-10-28",
+          "cost_per_tonne_km": 2.0,
+          "own_baseline": 2.03,
+          "peer_baseline": 2.04,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-11-04",
+          "cost_per_tonne_km": 2.02,
+          "own_baseline": 2.04,
+          "peer_baseline": 2.14,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-11-11",
+          "cost_per_tonne_km": 2.1,
+          "own_baseline": 2.04,
+          "peer_baseline": 2.04,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-11-18",
+          "cost_per_tonne_km": 2.06,
+          "own_baseline": 2.05,
+          "peer_baseline": 1.99,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-11-25",
+          "cost_per_tonne_km": 1.95,
+          "own_baseline": 2.05,
+          "peer_baseline": 1.99,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-12-02",
+          "cost_per_tonne_km": 2.06,
+          "own_baseline": 2.03,
+          "peer_baseline": 1.97,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-12-09",
+          "cost_per_tonne_km": 2.0,
+          "own_baseline": 2.03,
+          "peer_baseline": 2.17,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-12-16",
+          "cost_per_tonne_km": 2.0,
+          "own_baseline": 2.02,
+          "peer_baseline": 2.04,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-12-23",
+          "cost_per_tonne_km": 2.05,
+          "own_baseline": 2.02,
+          "peer_baseline": 2.09,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-12-30",
+          "cost_per_tonne_km": 1.99,
+          "own_baseline": 2.03,
+          "peer_baseline": 2.17,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-01-06",
+          "cost_per_tonne_km": 2.08,
+          "own_baseline": 2.03,
+          "peer_baseline": 2.02,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-01-13",
+          "cost_per_tonne_km": 2.03,
+          "own_baseline": 2.02,
+          "peer_baseline": 2.0,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-01-20",
+          "cost_per_tonne_km": 2.09,
+          "own_baseline": 2.02,
+          "peer_baseline": 1.96,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-01-27",
+          "cost_per_tonne_km": 1.98,
+          "own_baseline": 2.04,
+          "peer_baseline": 2.18,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-02-03",
+          "cost_per_tonne_km": 2.04,
+          "own_baseline": 2.03,
+          "peer_baseline": 2.21,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-02-10",
+          "cost_per_tonne_km": 2.01,
+          "own_baseline": 2.03,
+          "peer_baseline": 2.04,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-02-17",
+          "cost_per_tonne_km": 1.98,
+          "own_baseline": 2.03,
+          "peer_baseline": 2.22,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-02-24",
+          "cost_per_tonne_km": 2.05,
+          "own_baseline": 2.02,
+          "peer_baseline": 2.08,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-03-03",
+          "cost_per_tonne_km": 2.02,
+          "own_baseline": 2.03,
+          "peer_baseline": 2.15,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-03-10",
+          "cost_per_tonne_km": 2.05,
+          "own_baseline": 2.02,
+          "peer_baseline": 2.12,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-03-17",
+          "cost_per_tonne_km": 2.05,
+          "own_baseline": 2.03,
+          "peer_baseline": 2.08,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-03-24",
+          "cost_per_tonne_km": 2.06,
+          "own_baseline": 2.02,
+          "peer_baseline": 1.99,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-03-31",
+          "cost_per_tonne_km": 2.03,
+          "own_baseline": 2.03,
+          "peer_baseline": 2.05,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-04-07",
+          "cost_per_tonne_km": 2.03,
+          "own_baseline": 2.03,
+          "peer_baseline": 2.21,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-04-14",
+          "cost_per_tonne_km": 1.99,
+          "own_baseline": 2.04,
+          "peer_baseline": 1.98,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-04-21",
+          "cost_per_tonne_km": 2.0,
+          "own_baseline": 2.04,
+          "peer_baseline": 2.06,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-04-28",
+          "cost_per_tonne_km": 1.99,
+          "own_baseline": 2.03,
+          "peer_baseline": 2.07,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-05-05",
+          "cost_per_tonne_km": 2.17,
+          "own_baseline": 2.03,
+          "peer_baseline": 2.2,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-05-12",
+          "cost_per_tonne_km": 2.28,
+          "own_baseline": 2.04,
+          "peer_baseline": 2.14,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-05-19",
+          "cost_per_tonne_km": 2.12,
+          "own_baseline": 2.07,
+          "peer_baseline": 2.11,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-05-26",
+          "cost_per_tonne_km": 2.19,
+          "own_baseline": 2.08,
+          "peer_baseline": 2.11,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-06-02",
+          "cost_per_tonne_km": 2.26,
+          "own_baseline": 2.1,
+          "peer_baseline": 2.06,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-06-09",
+          "cost_per_tonne_km": 2.21,
+          "own_baseline": 2.12,
+          "peer_baseline": 2.2,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-06-16",
+          "cost_per_tonne_km": 2.25,
+          "own_baseline": 2.15,
+          "peer_baseline": 2.06,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-06-23",
+          "cost_per_tonne_km": 2.22,
+          "own_baseline": 2.18,
+          "peer_baseline": 2.05,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-06-30",
+          "cost_per_tonne_km": 2.13,
+          "own_baseline": 2.21,
+          "peer_baseline": 2.15,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-07-07",
+          "cost_per_tonne_km": 2.12,
+          "own_baseline": 2.21,
+          "peer_baseline": 1.98,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-07-14",
+          "cost_per_tonne_km": 2.12,
+          "own_baseline": 2.19,
+          "peer_baseline": 2.17,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-07-21",
+          "cost_per_tonne_km": 2.21,
+          "own_baseline": 2.19,
+          "peer_baseline": 2.04,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-07-28",
+          "cost_per_tonne_km": 2.23,
+          "own_baseline": 2.19,
+          "peer_baseline": 2.06,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-08-04",
+          "cost_per_tonne_km": 2.11,
+          "own_baseline": 2.19,
+          "peer_baseline": 2.18,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-08-11",
+          "cost_per_tonne_km": 2.16,
+          "own_baseline": 2.17,
+          "peer_baseline": 1.99,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-08-18",
+          "cost_per_tonne_km": 2.22,
+          "own_baseline": 2.16,
+          "peer_baseline": 2.01,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-08-25",
+          "cost_per_tonne_km": 2.1,
+          "own_baseline": 2.16,
+          "peer_baseline": 2.02,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-09-01",
+          "cost_per_tonne_km": 2.17,
+          "own_baseline": 2.16,
+          "peer_baseline": 2.13,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-09-08",
+          "cost_per_tonne_km": 2.1,
+          "own_baseline": 2.17,
+          "peer_baseline": 2.15,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-09-15",
+          "cost_per_tonne_km": 2.18,
+          "own_baseline": 2.16,
+          "peer_baseline": 2.06,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-09-22",
+          "cost_per_tonne_km": 2.22,
+          "own_baseline": 2.16,
+          "peer_baseline": 1.98,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-09-29",
+          "cost_per_tonne_km": 2.18,
+          "own_baseline": 2.16,
+          "peer_baseline": 2.08,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-10-06",
+          "cost_per_tonne_km": 2.27,
+          "own_baseline": 2.17,
+          "peer_baseline": 2.11,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-10-13",
+          "cost_per_tonne_km": 2.14,
+          "own_baseline": 2.18,
+          "peer_baseline": 2.05,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-10-20",
+          "cost_per_tonne_km": 2.11,
+          "own_baseline": 2.17,
+          "peer_baseline": 2.07,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-10-27",
+          "cost_per_tonne_km": 2.12,
+          "own_baseline": 2.17,
+          "peer_baseline": 2.18,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-11-03",
+          "cost_per_tonne_km": 2.13,
+          "own_baseline": 2.16,
+          "peer_baseline": 2.03,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-11-10",
+          "cost_per_tonne_km": 2.12,
+          "own_baseline": 2.17,
+          "peer_baseline": 2.2,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-11-17",
+          "cost_per_tonne_km": 2.11,
+          "own_baseline": 2.16,
+          "peer_baseline": 2.0,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-11-24",
+          "cost_per_tonne_km": 2.24,
+          "own_baseline": 2.15,
+          "peer_baseline": 2.03,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-12-01",
+          "cost_per_tonne_km": 2.15,
+          "own_baseline": 2.15,
+          "peer_baseline": 2.07,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-12-08",
+          "cost_per_tonne_km": 2.17,
+          "own_baseline": 2.14,
+          "peer_baseline": 1.98,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-12-15",
+          "cost_per_tonne_km": 2.14,
+          "own_baseline": 2.14,
+          "peer_baseline": 1.97,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-12-22",
+          "cost_per_tonne_km": 2.22,
+          "own_baseline": 2.15,
+          "peer_baseline": 1.99,
+          "is_anomaly": false,
+          "flagged_status": null
+        }
+      ]
+    },
+    "Mumbai-Pune": {
+      "route": "Mumbai-Pune",
+      "route_type": "Short",
+      "origin": "Mumbai",
+      "destination": "Pune",
+      "series": [
+        {
+          "week_of": "2024-01-01",
+          "cost_per_tonne_km": 3.3,
+          "own_baseline": null,
+          "peer_baseline": 3.0,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-01-08",
+          "cost_per_tonne_km": 3.38,
+          "own_baseline": 3.3,
+          "peer_baseline": 3.05,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-01-15",
+          "cost_per_tonne_km": 3.41,
+          "own_baseline": 3.34,
+          "peer_baseline": 3.02,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-01-22",
+          "cost_per_tonne_km": 3.38,
+          "own_baseline": 3.36,
+          "peer_baseline": 2.99,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-01-29",
+          "cost_per_tonne_km": 3.28,
+          "own_baseline": 3.37,
+          "peer_baseline": 3.19,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-02-05",
+          "cost_per_tonne_km": 3.29,
+          "own_baseline": 3.35,
+          "peer_baseline": 3.02,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-02-12",
+          "cost_per_tonne_km": 3.28,
+          "own_baseline": 3.34,
+          "peer_baseline": 3.11,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-02-19",
+          "cost_per_tonne_km": 3.38,
+          "own_baseline": 3.33,
+          "peer_baseline": 2.99,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-02-26",
+          "cost_per_tonne_km": 3.25,
+          "own_baseline": 3.34,
+          "peer_baseline": 3.1,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-03-04",
+          "cost_per_tonne_km": 3.41,
+          "own_baseline": 3.33,
+          "peer_baseline": 3.0,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-03-11",
+          "cost_per_tonne_km": 3.34,
+          "own_baseline": 3.34,
+          "peer_baseline": 3.11,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-03-18",
+          "cost_per_tonne_km": 3.41,
+          "own_baseline": 3.33,
+          "peer_baseline": 3.08,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-03-25",
+          "cost_per_tonne_km": 3.53,
+          "own_baseline": 3.33,
+          "peer_baseline": 3.17,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-04-01",
+          "cost_per_tonne_km": 3.33,
+          "own_baseline": 3.36,
+          "peer_baseline": 2.99,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-04-08",
+          "cost_per_tonne_km": 3.49,
+          "own_baseline": 3.37,
+          "peer_baseline": 3.13,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-04-15",
+          "cost_per_tonne_km": 3.57,
+          "own_baseline": 3.39,
+          "peer_baseline": 3.2,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-04-22",
+          "cost_per_tonne_km": 3.33,
+          "own_baseline": 3.42,
+          "peer_baseline": 3.06,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-04-29",
+          "cost_per_tonne_km": 3.52,
+          "own_baseline": 3.43,
+          "peer_baseline": 3.07,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-05-06",
+          "cost_per_tonne_km": 3.5,
+          "own_baseline": 3.44,
+          "peer_baseline": 3.1,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-05-13",
+          "cost_per_tonne_km": 3.3,
+          "own_baseline": 3.46,
+          "peer_baseline": 3.06,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-05-20",
+          "cost_per_tonne_km": 3.34,
+          "own_baseline": 3.45,
+          "peer_baseline": 3.05,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-05-27",
+          "cost_per_tonne_km": 3.44,
+          "own_baseline": 3.42,
+          "peer_baseline": 3.11,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-06-03",
+          "cost_per_tonne_km": 3.38,
+          "own_baseline": 3.44,
+          "peer_baseline": 3.14,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-06-10",
+          "cost_per_tonne_km": 3.53,
+          "own_baseline": 3.42,
+          "peer_baseline": 3.03,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-06-17",
+          "cost_per_tonne_km": 3.33,
+          "own_baseline": 3.42,
+          "peer_baseline": 3.17,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-06-24",
+          "cost_per_tonne_km": 3.35,
+          "own_baseline": 3.42,
+          "peer_baseline": 3.1,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-07-01",
+          "cost_per_tonne_km": 3.37,
+          "own_baseline": 3.4,
+          "peer_baseline": 3.19,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-07-08",
+          "cost_per_tonne_km": 3.55,
+          "own_baseline": 3.38,
+          "peer_baseline": 3.12,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-07-15",
+          "cost_per_tonne_km": 3.44,
+          "own_baseline": 3.41,
+          "peer_baseline": 3.09,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-07-22",
+          "cost_per_tonne_km": 3.52,
+          "own_baseline": 3.42,
+          "peer_baseline": 3.13,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-07-29",
+          "cost_per_tonne_km": 3.39,
+          "own_baseline": 3.43,
+          "peer_baseline": 3.15,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-08-05",
+          "cost_per_tonne_km": 3.37,
+          "own_baseline": 3.43,
+          "peer_baseline": 3.06,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-08-12",
+          "cost_per_tonne_km": 3.35,
+          "own_baseline": 3.41,
+          "peer_baseline": 3.0,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-08-19",
+          "cost_per_tonne_km": 3.42,
+          "own_baseline": 3.42,
+          "peer_baseline": 3.08,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-08-26",
+          "cost_per_tonne_km": 3.39,
+          "own_baseline": 3.43,
+          "peer_baseline": 3.11,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-09-02",
+          "cost_per_tonne_km": 3.29,
+          "own_baseline": 3.43,
+          "peer_baseline": 3.08,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-09-09",
+          "cost_per_tonne_km": 3.28,
+          "own_baseline": 3.4,
+          "peer_baseline": 3.17,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-09-16",
+          "cost_per_tonne_km": 3.43,
+          "own_baseline": 3.37,
+          "peer_baseline": 3.16,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-09-23",
+          "cost_per_tonne_km": 3.47,
+          "own_baseline": 3.36,
+          "peer_baseline": 3.15,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-09-30",
+          "cost_per_tonne_km": 3.42,
+          "own_baseline": 3.37,
+          "peer_baseline": 3.02,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-10-07",
+          "cost_per_tonne_km": 3.51,
+          "own_baseline": 3.38,
+          "peer_baseline": 3.09,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-10-14",
+          "cost_per_tonne_km": 3.35,
+          "own_baseline": 3.4,
+          "peer_baseline": 3.09,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-10-21",
+          "cost_per_tonne_km": 3.34,
+          "own_baseline": 3.39,
+          "peer_baseline": 3.08,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-10-28",
+          "cost_per_tonne_km": 3.49,
+          "own_baseline": 3.39,
+          "peer_baseline": 3.03,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-11-04",
+          "cost_per_tonne_km": 3.42,
+          "own_baseline": 3.41,
+          "peer_baseline": 3.01,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-11-11",
+          "cost_per_tonne_km": 3.45,
+          "own_baseline": 3.43,
+          "peer_baseline": 4.17,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-11-18",
+          "cost_per_tonne_km": 3.42,
+          "own_baseline": 3.43,
+          "peer_baseline": 4.09,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-11-25",
+          "cost_per_tonne_km": 3.43,
+          "own_baseline": 3.43,
+          "peer_baseline": 3.06,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-12-02",
+          "cost_per_tonne_km": 3.44,
+          "own_baseline": 3.43,
+          "peer_baseline": 3.05,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-12-09",
+          "cost_per_tonne_km": 3.43,
+          "own_baseline": 3.42,
+          "peer_baseline": 3.22,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-12-16",
+          "cost_per_tonne_km": 3.55,
+          "own_baseline": 3.43,
+          "peer_baseline": 3.08,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-12-23",
+          "cost_per_tonne_km": 3.51,
+          "own_baseline": 3.45,
+          "peer_baseline": 3.11,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2024-12-30",
+          "cost_per_tonne_km": 3.4,
+          "own_baseline": 3.46,
+          "peer_baseline": 3.22,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-01-06",
+          "cost_per_tonne_km": 3.5,
+          "own_baseline": 3.45,
+          "peer_baseline": 3.17,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-01-13",
+          "cost_per_tonne_km": 3.53,
+          "own_baseline": 3.46,
+          "peer_baseline": 3.05,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-01-20",
+          "cost_per_tonne_km": 3.5,
+          "own_baseline": 3.47,
+          "peer_baseline": 3.06,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-01-27",
+          "cost_per_tonne_km": 3.39,
+          "own_baseline": 3.48,
+          "peer_baseline": 3.14,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-02-03",
+          "cost_per_tonne_km": 3.33,
+          "own_baseline": 3.48,
+          "peer_baseline": 3.02,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-02-10",
+          "cost_per_tonne_km": 3.39,
+          "own_baseline": 3.46,
+          "peer_baseline": 2.99,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-02-17",
+          "cost_per_tonne_km": 3.41,
+          "own_baseline": 3.44,
+          "peer_baseline": 3.1,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-02-24",
+          "cost_per_tonne_km": 3.41,
+          "own_baseline": 3.43,
+          "peer_baseline": 3.08,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-03-03",
+          "cost_per_tonne_km": 3.5,
+          "own_baseline": 3.43,
+          "peer_baseline": 3.22,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-03-10",
+          "cost_per_tonne_km": 3.52,
+          "own_baseline": 3.43,
+          "peer_baseline": 3.18,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-03-17",
+          "cost_per_tonne_km": 3.39,
+          "own_baseline": 3.43,
+          "peer_baseline": 3.08,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-03-24",
+          "cost_per_tonne_km": 3.35,
+          "own_baseline": 3.42,
+          "peer_baseline": 3.14,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-03-31",
+          "cost_per_tonne_km": 3.23,
+          "own_baseline": 3.41,
+          "peer_baseline": 3.06,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-04-07",
+          "cost_per_tonne_km": 3.53,
+          "own_baseline": 3.4,
+          "peer_baseline": 3.19,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-04-14",
+          "cost_per_tonne_km": 3.4,
+          "own_baseline": 3.42,
+          "peer_baseline": 3.0,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-04-21",
+          "cost_per_tonne_km": 3.29,
+          "own_baseline": 3.42,
+          "peer_baseline": 3.07,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-04-28",
+          "cost_per_tonne_km": 3.41,
+          "own_baseline": 3.4,
+          "peer_baseline": 3.03,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-05-05",
+          "cost_per_tonne_km": 3.61,
+          "own_baseline": 3.39,
+          "peer_baseline": 3.32,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-05-12",
+          "cost_per_tonne_km": 3.59,
+          "own_baseline": 3.4,
+          "peer_baseline": 3.18,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-05-19",
+          "cost_per_tonne_km": 3.47,
+          "own_baseline": 3.43,
+          "peer_baseline": 3.32,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-05-26",
+          "cost_per_tonne_km": 3.48,
+          "own_baseline": 3.44,
+          "peer_baseline": 3.28,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-06-02",
+          "cost_per_tonne_km": 3.57,
+          "own_baseline": 3.47,
+          "peer_baseline": 3.14,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-06-09",
+          "cost_per_tonne_km": 3.47,
+          "own_baseline": 3.48,
+          "peer_baseline": 3.28,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-06-16",
+          "cost_per_tonne_km": 3.72,
+          "own_baseline": 3.49,
+          "peer_baseline": 3.29,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-06-23",
+          "cost_per_tonne_km": 3.76,
+          "own_baseline": 3.54,
+          "peer_baseline": 3.12,
+          "is_anomaly": true,
+          "flagged_status": "Yes"
+        },
+        {
+          "week_of": "2025-06-30",
+          "cost_per_tonne_km": 3.54,
+          "own_baseline": 3.59,
+          "peer_baseline": 3.34,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-07-07",
+          "cost_per_tonne_km": 3.64,
+          "own_baseline": 3.58,
+          "peer_baseline": 3.23,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-07-14",
+          "cost_per_tonne_km": 3.59,
+          "own_baseline": 3.58,
+          "peer_baseline": 3.39,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-07-21",
+          "cost_per_tonne_km": 3.53,
+          "own_baseline": 3.6,
+          "peer_baseline": 3.21,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-07-28",
+          "cost_per_tonne_km": 3.56,
+          "own_baseline": 3.6,
+          "peer_baseline": 3.34,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-08-04",
+          "cost_per_tonne_km": 3.73,
+          "own_baseline": 3.6,
+          "peer_baseline": 3.34,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-08-11",
+          "cost_per_tonne_km": 3.53,
+          "own_baseline": 3.63,
+          "peer_baseline": 3.37,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-08-18",
+          "cost_per_tonne_km": 3.79,
+          "own_baseline": 3.61,
+          "peer_baseline": 3.28,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-08-25",
+          "cost_per_tonne_km": 3.63,
+          "own_baseline": 3.61,
+          "peer_baseline": 3.23,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-09-01",
+          "cost_per_tonne_km": 3.67,
+          "own_baseline": 3.62,
+          "peer_baseline": 3.45,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-09-08",
+          "cost_per_tonne_km": 3.72,
+          "own_baseline": 3.63,
+          "peer_baseline": 3.25,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-09-15",
+          "cost_per_tonne_km": 3.98,
+          "own_baseline": 3.64,
+          "peer_baseline": 3.22,
+          "is_anomaly": true,
+          "flagged_status": "Yes"
+        },
+        {
+          "week_of": "2025-09-22",
+          "cost_per_tonne_km": 3.8,
+          "own_baseline": 3.7,
+          "peer_baseline": 3.21,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-09-29",
+          "cost_per_tonne_km": 3.82,
+          "own_baseline": 3.73,
+          "peer_baseline": 3.44,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-10-06",
+          "cost_per_tonne_km": 3.94,
+          "own_baseline": 3.74,
+          "peer_baseline": 3.21,
+          "is_anomaly": true,
+          "flagged_status": "Yes"
+        },
+        {
+          "week_of": "2025-10-13",
+          "cost_per_tonne_km": 3.87,
+          "own_baseline": 3.79,
+          "peer_baseline": 3.3,
+          "is_anomaly": false,
+          "flagged_status": null
+        },
+        {
+          "week_of": "2025-10-20",
+          "cost_per_tonne_km": 4.1,
+          "own_baseline": 3.8,
+          "peer_baseline": 3.28,
+          "is_anomaly": true,
+          "flagged_status": "Yes"
+        },
+        {
+          "week_of": "2025-10-27",
+          "cost_per_tonne_km": 4.07,
+          "own_baseline": 3.86,
+          "peer_baseline": 3.18,
+          "is_anomaly": true,
+          "flagged_status": "Yes"
+        },
+        {
+          "week_of": "2025-11-03",
+          "cost_per_tonne_km": 4.2,
+          "own_baseline": 3.91,
+          "peer_baseline": 3.38,
+          "is_anomaly": true,
+          "flagged_status": "Yes"
+        },
+        {
+          "week_of": "2025-11-10",
+          "cost_per_tonne_km": 3.97,
+          "own_baseline": 3.97,
+          "peer_baseline": 3.27,
+          "is_anomaly": true,
+          "flagged_status": "Yes"
+        },
+        {
+          "week_of": "2025-11-17",
+          "cost_per_tonne_km": 4.32,
+          "own_baseline": 3.97,
+          "peer_baseline": 3.28,
+          "is_anomaly": true,
+          "flagged_status": "Yes"
+        },
+        {
+          "week_of": "2025-11-24",
+          "cost_per_tonne_km": 4.16,
+          "own_baseline": 4.04,
+          "peer_baseline": 3.38,
+          "is_anomaly": true,
+          "flagged_status": "Yes"
+        },
+        {
+          "week_of": "2025-12-01",
+          "cost_per_tonne_km": 4.39,
+          "own_baseline": 4.08,
+          "peer_baseline": 3.2,
+          "is_anomaly": true,
+          "flagged_status": "Yes"
+        },
+        {
+          "week_of": "2025-12-08",
+          "cost_per_tonne_km": 4.43,
+          "own_baseline": 4.13,
+          "peer_baseline": 3.19,
+          "is_anomaly": true,
+          "flagged_status": "Yes"
+        },
+        {
+          "week_of": "2025-12-15",
+          "cost_per_tonne_km": 4.39,
+          "own_baseline": 4.2,
+          "peer_baseline": 3.24,
+          "is_anomaly": true,
+          "flagged_status": "Yes"
+        },
+        {
+          "week_of": "2025-12-22",
+          "cost_per_tonne_km": 4.49,
+          "own_baseline": 4.24,
+          "peer_baseline": 3.23,
+          "is_anomaly": true,
+          "flagged_status": "Yes"
+        }
+      ]
+    }
+  },
+  "notes": [
+    {
+      "note_id": "N001",
+      "date": "2025-02-24",
+      "applies_to": "Chennai-Bangalore",
+      "note": "Heavy flooding on the Chennai-Bangalore highway disrupted normal truck movement from Feb 24 to Mar 8, forcing longer detours and higher trip costs. Roads were passable again by Mar 9."
+    },
+    {
+      "note_id": "N002",
+      "date": "2025-01-20",
+      "applies_to": "Ahmedabad-Mumbai",
+      "note": "A regional festival week saw a temporary surcharge applied by transporters on the Ahmedabad-Mumbai corridor due to high demand and limited truck availability."
+    },
+    {
+      "note_id": "N003",
+      "date": "2025-05-05",
+      "applies_to": "All Routes",
+      "note": "Diesel prices rose nationwide starting this week, pushing up transportation costs across all routes by roughly 5-7%."
+    },
+    {
+      "note_id": "N004",
+      "date": "2024-03-11",
+      "applies_to": "All Routes",
+      "note": "A new toll plaza was commissioned on a national highway stretch, but the affected routes are not part of this dataset."
+    },
+    {
+      "note_id": "N005",
+      "date": "2024-07-29",
+      "applies_to": "Mumbai-Delhi",
+      "note": "Scheduled highway maintenance work between Mumbai and Delhi caused minor delays for about a week; costs were not significantly affected."
+    },
+    {
+      "note_id": "N006",
+      "date": "2025-09-22",
+      "applies_to": "All Routes",
+      "note": "A logistics industry report noted overall demand for freight capacity remained stable this quarter with no major disruptions reported."
+    },
+    {
+      "note_id": "N007",
+      "date": "2024-05-20",
+      "applies_to": "Delhi-Jaipur",
+      "note": "Local authorities announced improved road conditions on the Delhi-Jaipur stretch after resurfacing work was completed."
+    },
+    {
+      "note_id": "N008",
+      "date": "2025-06-09",
+      "applies_to": "Kolkata-Bhubaneswar",
+      "note": "No significant disruptions were reported on the Kolkata-Bhubaneswar corridor this quarter; freight movement remained normal."
+    },
+    {
+      "note_id": "N009",
+      "date": "2025-03-17",
+      "applies_to": "Chennai-Bangalore",
+      "note": "Highway authorities confirmed the Chennai-Bangalore route returned to normal conditions after flood-related repairs were completed."
+    },
+    {
+      "note_id": "N010",
+      "date": "2025-10-27",
+      "applies_to": "All Routes",
+      "note": "A new vehicle tracking mandate was introduced for commercial fleets; compliance costs were absorbed by transporters without a rate change."
+    }
+  ],
+  "reproducibility": {
+    "runs_count": 3,
+    "is_reproducible": true,
+    "run1_sha256": "6b9f4094d28c09374d1e52cf7fbd27b59d3205e4b6116b1b24ba30c483c6fcdd",
+    "run2_sha256": "6b9f4094d28c09374d1e52cf7fbd27b59d3205e4b6116b1b24ba30c483c6fcdd",
+    "run3_sha256": "6b9f4094d28c09374d1e52cf7fbd27b59d3205e4b6116b1b24ba30c483c6fcdd",
+    "field_mismatches": 0,
+    "total_rows": 20,
+    "justified_count": 4,
+    "unexplained_count": 16
+  },
+  "guardrail_eval": {
+    "all_passed": true,
+    "tests_run": 5,
+    "passed_count": 5,
+    "results": [
+      {
+        "note_id": "N005",
+        "route": "Mumbai-Delhi",
+        "week_of": "2024-07-29",
+        "description": "Costs not affected",
+        "verdict": "Yes",
+        "matched_note_id": "",
+        "guardrail_passed": true
+      },
+      {
+        "note_id": "N006",
+        "route": "Mumbai-Pune",
+        "week_of": "2025-09-22",
+        "description": "Stable demand, no disruptions",
+        "verdict": "Yes",
+        "matched_note_id": "",
+        "guardrail_passed": true
+      },
+      {
+        "note_id": "N008",
+        "route": "Kolkata-Bhubaneswar",
+        "week_of": "2025-06-09",
+        "description": "No disruptions reported",
+        "verdict": "Yes",
+        "matched_note_id": "",
+        "guardrail_passed": true
+      },
+      {
+        "note_id": "N009",
+        "route": "Chennai-Bangalore",
+        "week_of": "2025-03-17",
+        "description": "Highway returned to normal",
+        "verdict": "Yes",
+        "matched_note_id": "",
+        "guardrail_passed": true
+      },
+      {
+        "note_id": "N010",
+        "route": "Mumbai-Pune",
+        "week_of": "2025-10-27",
+        "description": "Costs absorbed without rate change",
+        "verdict": "Yes",
+        "matched_note_id": "",
+        "guardrail_passed": true
+      }
+    ]
+  },
+  "rag_metrics": {
+    "evaluated_anomalies": 20,
+    "faithfulness_score": 0.625,
+    "context_precision": 1.0,
+    "answer_relevancy": 1.0,
+    "ragas_composite_score": 0.85
+  },
+  "telemetry": {
+    "model_name": "openai/gpt-oss-120b (Groq LPU)",
+    "total_llm_calls": 20,
+    "total_input_tokens": 15419,
+    "total_output_tokens": 8571,
+    "total_tokens": 23990,
+    "estimated_cost_usd": 0.007455,
+    "input_rate_per_million": "$0.15",
+    "output_rate_per_million": "$0.6"
+  }
+}
